@@ -1,8 +1,64 @@
 :root {
   --black-bg-color: #000;
   --white-addition-color: #fff;
+  --accent-color: #fe9013;
 }
+
+body {
+  width: 1600px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
 /* .......header .....*/
 header {
+  display: flex;
+  padding: 0 220px;
   background-color: var(--black-bg-color);
+}
+nav {
+  margin: auto 0;
+}
+.header-logo {
+  margin: 15px 30px;
+  vertical-align: middle;
+  color: var(--white-addition-color);
+  border: 1.18841px solid var(--white-addition-color);
+  border-radius: 2px;
+  font-size: 19.0145px;
+  line-height: 120%;
+  font-style: normal;
+  font-weight: 400;
+  padding: 4px;
+  text-align: center;
+}
+.logo-bamboo {
+  position: relative;
+  left: 5px;
+}
+.header-logo span {
+  position: relative;
+  right: 7px;
+}
+.nav-link {
+  margin: 0 30px;
+  font-weight: 500;
+  line-height: 140%;
+  color: var(--white-addition-color);
+  text-decoration: none;
+}
+.designed-by-link {
+  position: relative;
+  left: 19em;
+}
+.nav-link:hover,
+.nav-link:focus,
+.active {
+  color: var(--accent-color);
 }
