@@ -2,6 +2,7 @@
   --black-bg-color: #000;
   --white-addition-color: #fff;
   --accent-color: #fe9013;
+  --secondary-accent-color: #ffee2e;
 }
 
 body {
@@ -62,3 +63,57 @@ nav {
 .active {
   color: var(--accent-color);
 }
+/* ....end block... */
+/* ....hero..... */
+.hero {
+  background-image: url(../../assets/images/Giant\ Panda.jpg);
+  height: 700px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.hero .elipse {
+  margin-top: 12px;
+}
+.hero-info h2 {
+  font-weight: 700;
+  font-size: 106.496px;
+  line-height: 75%;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--white-addition-color);
+}
+.hearo-accent {
+  color: var(--secondary-accent-color);
+}
+.hero-button {
+  display: block;
+  margin: 40px auto;
+  padding: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  width: 300px;
+  border-radius: 25px;
+
+  color: var(--white-addition-color);
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+}
+.hero-button:hover,
+.hero-button:focus {
+  background: var(--accent-color);
+  cursor: pointer;
+  text-decoration: underline;
+}
+.hero-info {
+  position: relative;
+  bottom: 43%;
+  right: 11%;
+}
+/* .......end hero..... */
