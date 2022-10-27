@@ -273,21 +273,21 @@ nav {
 .scroll-btn.right {
   position: absolute;
   left: 88%;
-  bottom: -237%;
+  bottom: -295%;
 }
 .scroll-btn.left {
   position: absolute;
   left: 133px;
-  bottom: -237%;
+  bottom: -295%;
 }
 .strelitzia-img {
   position: absolute;
-  top: 396%;
+  top: 466%;
   right: 0;
 }
 .palm-img {
   position: absolute;
-  top: 369%;
+  top: 434%;
 }
 /* .......block end............ */
 /* ............pick-and-feed....... */
