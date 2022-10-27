@@ -3,18 +3,14 @@
   --white-addition-color: #fff;
   --accent-color: #fe9013;
   --secondary-accent-color: #ffee2e;
+  --orange-gradient: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  --hover-btn-color: #e47209;
 }
 
 body {
   width: 1600px;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
-}
-
-ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
 }
 
 /* .......header .....*/
@@ -25,6 +21,11 @@ header {
 }
 nav {
   margin: auto 0;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
 }
 .header-logo {
   margin: 15px 30px;
@@ -65,6 +66,7 @@ nav {
 }
 /* ....end block... */
 /* ....hero..... */
+
 .hero {
   background-image: url(../../assets/images/Giant\ Panda.jpg);
   height: 700px;
@@ -74,8 +76,17 @@ nav {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
-.hero .elipse {
+.elipse {
+  background: var(--orange-gradient);
+  border-radius: 50%;
+  width: 465px;
+  height: 465px;
   margin-top: 12px;
+}
+.hero-info {
+  position: relative;
+  bottom: 42%;
+  right: 10%;
 }
 .hero-info h2 {
   font-weight: 700;
@@ -100,20 +111,154 @@ nav {
   text-align: center;
   text-transform: uppercase;
   width: 300px;
+  border: none;
   border-radius: 25px;
 
   color: var(--white-addition-color);
-  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  background: var(--orange-gradient);
 }
 .hero-button:hover,
 .hero-button:focus {
-  background: var(--accent-color);
-  cursor: pointer;
-  text-decoration: underline;
-}
-.hero-info {
-  position: relative;
-  bottom: 43%;
-  right: 11%;
+  background: var(--hover-btn-color);
 }
 /* .......end hero..... */
+/* ........backstage section....... */
+.backstage {
+  padding: 180px 220px;
+  display: flex;
+  background: url("../../assets/icons/flower_foto1.png") no-repeat 100% 10px;
+}
+.backstage-info {
+  padding-left: 85px;
+}
+.backstage h2 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  margin: 0 0 20px;
+
+  color: #333b41;
+}
+.backstage p {
+  font-size: 16px;
+  line-height: 135%;
+
+  color: #333b41;
+}
+.backstage h3 {
+  font-size: 24px;
+  line-height: 120%;
+  margin: 55px 0 35px;
+  color: #333b41;
+}
+.backstage-info img {
+  position: relative;
+  left: 104%;
+  bottom: 53%;
+}
+/* ...........end block........ */
+/* .........pets cards....... */
+.cards {
+  padding: 0 220px;
+}
+.card-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+}
+.card-item {
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  width: 365px;
+}
+.card-item > img {
+  border-radius: 5px 5px 0 0;
+}
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px 15px;
+}
+.description {
+  display: inline-block;
+}
+.card-item h2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  margin: 0;
+
+  color: var(--black-bg-color);
+}
+.card-item p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  margin: 0;
+
+  color: var(--black-bg-color);
+}
+
+.choose-favorite-btn {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  width: 290px;
+  padding: 15px 0;
+  margin: 80px auto 100px;
+
+  border: none;
+  border-radius: 25px;
+  background: var(--accent-color);
+  color: var(--white-addition-color);
+}
+
+.choose-favorite-btn:hover,
+.choose-favorite-btn:focus {
+  background-color: var(--hover-btn-color);
+  cursor: pointer;
+}
+.scroll-btn {
+  padding: 25px;
+  width: 60px;
+  border-radius: 50%;
+  border: none;
+
+  background: var(--orange-gradient);
+  color: var(--white-addition-color);
+}
+.scroll-btn:hover,
+.scroll-btn:focus {
+  background: var(--hover-btn-color);
+  cursor: pointer;
+}
+.scroll-btn.right {
+  position: absolute;
+  left: 88%;
+  bottom: -237%;
+}
+.scroll-btn.left {
+  position: absolute;
+  left: 133px;
+  bottom: -237%;
+}
+
+.strelitzia-img {
+  position: absolute;
+  top: 397%;
+  right: 0;
+}
+.palm-img {
+  position: absolute;
+  top: 369%;
+}
+
+/* .......block end............ */

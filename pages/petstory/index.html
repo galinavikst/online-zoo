@@ -31,7 +31,7 @@
           </div>
         </a>
         <nav>
-          <ul>
+          <ul class="nav-list">
             <li class="nav-item">
               <a href="#" class="nav-link active">About</a>
             </li>
@@ -45,7 +45,7 @@
             </li>
             <li class="nav-item">
               <a
-                href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1"
+                href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?node-id=0%3A1"
                 target="_blank"
                 class="nav-link designed-by-link"
                 >Designed by &copy;</a
@@ -57,14 +57,8 @@
       <main>
         <div class="hero">
           <div></div>
-
           <div>
-            <img
-              src="../../assets/icons/Ellipse 6.png"
-              alt="elipse"
-              class="elipse"
-              width="465"
-            />
+            <div class="elipse"></div>
             <div class="hero-info">
               <h2>
                 Watch <br />
@@ -77,13 +71,15 @@
           </div>
         </div>
 
-        <section>
-          <img
-            src="../../assets/images/bamboo-cap.jpg"
-            width="610"
-            alt="a man in bamboo cap"
-          />
-          <div>
+        <section class="backstage">
+          <div class="">
+            <img
+              src="../../assets/images/bamboo-cap.jpg"
+              width="610"
+              alt="man in bamboo cap"
+            />
+          </div>
+          <div class="backstage-info">
             <h2>The Backstage of the Wilderness World.</h2>
             <p>
               The site was founded on the basis of a volunteer movement to
@@ -98,138 +94,143 @@
               These have a total of more than 1,500 mammals and reptiles.
             </p>
           </div>
-          <img
-            src="../../assets/icons/flower_foto1.png"
-            alt="flowers"
-            width="290"
-          />
         </section>
 
         <section class="animals-card">
-          <button>&larr;</button>
+          <button class="scroll-btn left">&larr;</button>
+          <button class="scroll-btn right">&rarr;</button>
           <div class="cards">
-            <ul>
-              <li>
+            <ul class="card-list">
+              <li class="card-item">
                 <img
                   src="../../assets/images/giant-pandas.jpg"
                   width="365"
                   alt="two giant pandas"
                 />
-                <div class="description">
-                  <div>
+                <div class="card-bottom">
+                  <div class="description">
                     <h2>giant Pandas</h2>
                     <p>Native to Southwest China</p>
-                    <img
-                      src="../../assets/icons/banana-bamboo_icon (1).png"
-                      width="35"
-                      alt="bamboo and banana"
-                    />
                   </div>
+                  <img
+                    class="card-icon"
+                    src="../../assets/icons/banana-bamboo_icon (1).png"
+                    width="35"
+                    alt="bamboo and banana"
+                  />
                 </div>
               </li>
-              <li>
+
+              <li class="card-item">
                 <img
                   src="../../assets/images/eagles.jpg"
                   alt="flying eagles"
                   width="365"
                 />
-                <div class="description">
-                  <div>
+                <div class="card-bottom">
+                  <div class="description">
                     <h2>Eagles</h2>
                     <p>Native to South America</p>
-                    <img
-                      src="../../assets/icons/meet-fish_icon.png"
-                      alt="meat and fish"
-                      width="35"
-                    />
                   </div>
+                  <img
+                    class="card-icon"
+                    src="../../assets/icons/meet-fish_icon.png"
+                    alt="meat and fish"
+                    width="50"
+                  />
                 </div>
               </li>
-              <li>
+              <li class="card-item">
                 <img
                   src="../../assets/images/Gorillas.jpg"
                   alt="gorilla"
                   width="365"
                 />
-                <div class="description">
-                  <div>
+                <div class="card-bottom">
+                  <div class="description">
                     <h2>Gorillas</h2>
                     <p>Native to Congo</p>
-                    <img
-                      src="../../assets/icons/banana-bamboo_icon (1).png"
-                      alt="bamboo and banana"
-                      width="35"
-                    />
                   </div>
+                  <img
+                    src="../../assets/icons/banana-bamboo_icon (1).png"
+                    alt="bamboo and banana"
+                    width="35"
+                    class="card-icon"
+                  />
                 </div>
               </li>
-              <li>
+              <li class="card-item">
                 <img
                   src="../../assets/images/two-toed-sloth.jpg"
                   alt="two toed sloth"
                   width="365"
                 />
-                <div class="description">
-                  <div>
+                <div class="card-bottom">
+                  <div class="description">
                     <h2>Two-toed Sloth</h2>
                     <p>Mesoamerica, South America</p>
-                    <img
-                      src="../../assets/icons/banana-bamboo_icon (1).png"
-                      alt="bamboo and banana"
-                      width="35"
-                    />
                   </div>
+                  <img
+                    src="../../assets/icons/banana-bamboo_icon (1).png"
+                    alt="bamboo and banana"
+                    width="35"
+                    class="card-icon"
+                  />
                 </div>
               </li>
-              <li>
+              <li class="card-item">
                 <img
                   src="../../assets/images/cheetahs.jpg"
                   alt="cheetahs"
                   width="365"
                 />
-                <div class="description">
-                  <div>
+                <div class="card-bottom">
+                  <div class="description">
                     <h2>cheetahs</h2>
                     <p>Native to Africa</p>
-                    <img
-                      src="../../assets/icons/meet-fish_icon.png"
-                      alt=""
-                      width="35"
-                    />
                   </div>
+                  <img
+                    src="../../assets/icons/meet-fish_icon.png"
+                    alt="meet and fish"
+                    width="50"
+                    class="card-icon"
+                  />
                 </div>
               </li>
-              <li>
+              <li class="card-item">
                 <img
                   src="../../assets/images/Penguins.jpg"
                   alt="Penguins"
                   width="365"
                 />
-                <div class="description">
-                  <div>
+                <div class="card-bottom">
+                  <div class="description">
                     <h2>Penguins</h2>
                     <p>Native to Antarctica</p>
-                    <img
-                      src="../../assets/icons/meet-fish_icon.png"
-                      alt="meet and fish"
-                      width="35"
-                    />
                   </div>
+                  <img
+                    src="../../assets/icons/meet-fish_icon.png"
+                    alt="meet and fish"
+                    width="50"
+                    class="card-icon"
+                  />
                 </div>
               </li>
             </ul>
           </div>
-          <button>&rarr;</button>
+
           <img
             src="../../assets/icons/palm_foto.png"
             alt="palm_leavs"
-            width="260"
+            width="280"
+            class="palm-img"
           />
-          <button>choose your favorite</button>
+          <button class="choose-favorite-btn">choose your favorite</button>
           <img
             src="../../assets/icons/strelitzia 1.png"
             alt="strelitzia"
             width="370"
+            class="strelitzia-img"
           />
         </section>
 
@@ -479,5 +480,6 @@
         </div>
       </footer>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
