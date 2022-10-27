@@ -267,7 +267,9 @@ nav {
 .choose-favorite-btn:hover,
 .choose-favorite-btn:focus,
 .feed-friend-link:hover,
-.feed-friend-link:focus {
+.feed-friend-link:focus,
+.leave-feedback-bnt:hover,
+.leave-feedback-bnt:focus {
   background-color: var(--hover-btn-color);
   cursor: pointer;
 }
@@ -471,5 +473,25 @@ nav {
 .hide-text {
   height: 315px;
   overflow: hidden;
+}
+.leave-feedback-bnt {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  width: 298px;
+  padding: 15px 0;
+  display: block;
+  margin-top: 32px;
+
+  background: var(--orange-gradient);
+  color: var(--white-addition-color);
+}
+.green-leav-img {
+  position: absolute;
+  right: 0;
 }
 /* .............end block........... */
