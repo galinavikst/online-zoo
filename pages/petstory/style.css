@@ -1,10 +1,35 @@
 :root {
   --black-bg-color: #000;
+  --main-text-color: #333b41;
   --white-addition-color: #fff;
   --accent-color: #fe9013;
   --secondary-accent-color: #ffee2e;
+  --bg-pink-color: rgba(253, 253, 255, 0.52);
   --orange-gradient: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   --hover-btn-color: #e47209;
+  --activ-addition-color: #4b9200;
+  --orange-grad: linear-gradient(
+      315.75deg,
+      rgba(254, 210, 144, 0.7) 30.06%,
+      #febdab 100.95%,
+      rgba(254, 210, 144, 0.7) 106.36%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
 }
 
 body {
@@ -222,7 +247,9 @@ nav {
 }
 
 .choose-favorite-btn:hover,
-.choose-favorite-btn:focus {
+.choose-favorite-btn:focus,
+.feed-friend-link:hover,
+.feed-friend-link:focus {
   background-color: var(--hover-btn-color);
   cursor: pointer;
 }
@@ -240,6 +267,9 @@ nav {
   background: var(--hover-btn-color);
   cursor: pointer;
 }
+.scroll-btn:active {
+  background: var(--activ-addition-color);
+}
 .scroll-btn.right {
   position: absolute;
   left: 88%;
@@ -250,15 +280,113 @@ nav {
   left: 133px;
   bottom: -237%;
 }
-
 .strelitzia-img {
   position: absolute;
-  top: 397%;
+  top: 396%;
   right: 0;
 }
 .palm-img {
   position: absolute;
   top: 369%;
 }
-
 /* .......block end............ */
+/* ............pick-and-feed....... */
+.block-pick-and-feed {
+  background: var(--orange-grad);
+  padding: 70px 220px 50px;
+}
+.pick-and-feed {
+  width: 1160px;
+  padding-bottom: 50px;
+  border: none;
+  border-radius: 20px;
+
+  background: var(--bg-pink-color);
+}
+.pick-and-feed h2 {
+  padding-top: 40px;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  margin: 0;
+  color: var(--accent-color);
+}
+.text {
+  padding-left: 100px;
+  color: var(--main-text-color);
+}
+.entering-text {
+  font-size: 24px;
+  line-height: 120%;
+  margin: 30px 0 40px;
+}
+.covid-info {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+}
+.donate-info {
+  font-size: 16px;
+  line-height: 130%;
+}
+.donate-link {
+  color: var(--main-text-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-color);
+}
+.pick-and-feed h3 {
+  margin: 60px 0 40px;
+  font-size: 36px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--main-text-color);
+}
+.donate-instruction {
+  display: flex;
+  justify-content: center;
+}
+.block-icon {
+  background: var(--white-addition-color);
+  border-radius: 5px;
+  border: 1px solid var(--accent-color);
+  width: 170px;
+  height: 170px;
+}
+.icon {
+  display: block;
+  margin: 55px;
+}
+.arrow {
+  display: inline;
+  margin: auto 30px;
+}
+.description-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+.description-icon p {
+  font-size: 16px;
+  line-height: 140%;
+  width: 170px;
+  margin: 30px 65px;
+
+  color: var(--main-text-color);
+}
+.feed-friend-link {
+  text-decoration: none;
+  margin: 0 auto;
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  width: 290px;
+  padding: 15px 0;
+  border: none;
+  border-radius: 25px;
+  background: var(--accent-color);
+  color: var(--white-addition-color);
+}
+/* .......end block........ */
