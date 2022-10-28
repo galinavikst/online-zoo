@@ -18,7 +18,7 @@
       <header>
         <a href="../petstory/index.html">
           <div>
-            <h1 class="header-logo">
+            <h1 id="petstory" class="header-logo">
               PetStory
               <br />
               <img
@@ -453,64 +453,90 @@
         </section>
       </main>
       <footer>
-        <img src="../../assets/icons/logo.png" width="80" alt="logo" />
-        <form action="">
-          <label for="">Subscribe to our news</label>
-          <input type="email" placeholder="Enter your email" />
-          <button>Submit</button>
-          <a href="../donate/index.html">donate for volunteers</a>
-        </form>
-        <ul class="social">
-          <li>
-            <a href="https://www.facebook.com/" target="_blank"
-              ><img
-                src="../../assets/icons/Fill 211.png"
-                width="10"
-                alt="facebook"
-              />
-              <p>Facebook</p></a
+        <div class="footer-main">
+          <div class="logo-donate">
+            <a href="#petstory">
+              <img
+                src="../../assets/icons/logo.png"
+                width="80"
+                alt="logo"
+                class="footer-logo"
+            /></a>
+            <a href="../donate/index.html" class="footer-donate-link"
+              >donate for volunteers</a
             >
-          </li>
-          <li>
-            <a href="https://www.twitter.com/" target="_blank"
-              ><img
-                src="../../assets/icons/Fill 172.png"
-                width="10"
-                alt="twitter"
-              />
-              <p>Twitter</p></a
-            >
-          </li>
-          <li>
-            <a href="https://www.instagram.com/" target="_blank"
-              ><img
-                src="../../assets/icons/Fill 166.png"
-                width="10"
-                alt="instagram"
-              />
-              <p>Instagram</p>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/" target="_blank"
-              ><img
-                src="../../assets/icons/Fill 213.png"
-                width="10"
-                alt="youtube"
-              />
-              <p>YouTube</p>
-            </a>
-          </li>
-        </ul>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Map</a></li>
-          <li><a href="#">Zoos</a></li>
-          <li><a href="#">Contact us</a></li>
-        </ul>
-        <div>
-          <p>Designed by Alisa Samborskaya</p>
-          <p>&copy;RSSchool & &copy;Yem Digital 2021</p>
+          </div>
+          <form action="#" class="subscribe-form">
+            <label for="">Subscribe to our news</label>
+            <input type="email" placeholder="Enter your email" required />
+            <button class="footer-submit-btn" type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="footer-bottom">
+          <ul class="social-list">
+            <li>
+              <a href="https://www.facebook.com/" target="_blank">
+                <div class="icon-bg">
+                  <img
+                    class="social-icon"
+                    src="../../assets/icons/Fill 211.png"
+                    width="8"
+                    alt="facebook"
+                  />
+                </div>
+                <p>Facebook</p></a
+              >
+            </li>
+            <li>
+              <a href="https://www.twitter.com/" target="_blank">
+                <div class="icon-bg">
+                  <img
+                    class="social-icon"
+                    src="../../assets/icons/Fill 172.png"
+                    width="16"
+                    alt="twitter"
+                  />
+                </div>
+                <p>Twitter</p></a
+              >
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank">
+                <div class="icon-bg">
+                  <img
+                    class="social-icon"
+                    src="../../assets/icons/Fill 166.png"
+                    width="16"
+                    alt="instagram"
+                  />
+                </div>
+                <p>Instagram</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/" target="_blank">
+                <div class="icon-bg">
+                  <img
+                    class="social-icon"
+                    src="../../assets/icons/Fill 213.png"
+                    width="16"
+                    alt="youtube"
+                  />
+                </div>
+                <p>YouTube</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link about-link active">About</a></li>
+            <li><a href="#" class="nav-link">Map</a></li>
+            <li><a href="#" class="nav-link">Zoos</a></li>
+            <li><a href="#" class="nav-link">Contact us</a></li>
+          </ul>
+          <div class="copy-rights">
+            <p class="designer">Designed by Alisa Samborskaya</p>
+            <p class="school">&copy;RSSchool & &copy;Yem Digital 2021</p>
+          </div>
         </div>
       </footer>
     </div>
