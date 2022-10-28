@@ -9,6 +9,7 @@
   --hover-btn-color: #e47209;
   --activ-addition-color: #4b9200;
   --gray-ligth-bg-color: #f1f3f2;
+  --gray-input-color-bg: #f5f7f6;
   --gray-text: #bdbdbd;
   --gray-testimonial-color: #767474;
   --pink-grad: linear-gradient(
@@ -270,7 +271,7 @@ nav {
 .feed-friend-link:focus,
 .leave-feedback-bnt:hover,
 .leave-feedback-bnt:focus {
-  background-color: var(--hover-btn-color);
+  background: var(--hover-btn-color);
   cursor: pointer;
 }
 .scroll-btn {
@@ -423,6 +424,7 @@ nav {
 .testimonial-list {
   padding: 0;
   margin-top: 45px;
+  margin-bottom: 20px;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -473,6 +475,32 @@ nav {
 .hide-text {
   height: 315px;
   overflow: hidden;
+}
+.input-border {
+  background: var(--pink-grad);
+  width: 600px;
+  height: 10px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+
+  border-radius: 5px;
+}
+input[type="range"] {
+  appearance: none;
+  margin-left: 0;
+  width: 600px;
+  height: 8px;
+  overflow: hidden;
+  background: var(--gray-input-color-bg);
+  border-radius: 5px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  height: 7px;
+  width: 25%;
+  border-radius: 50px;
+  background: var(--accent-color);
 }
 .leave-feedback-bnt {
   font-weight: 500;
