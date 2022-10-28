@@ -1,5 +1,6 @@
 :root {
   --black-bg-color: #000;
+  --footer-bg-color: #111115;
   --main-text-color: #333b41;
   --white-addition-color: #fff;
   --accent-color: #fe9013;
@@ -521,5 +522,15 @@ input[type="range"]::-webkit-slider-thumb {
 .green-leav-img {
   position: absolute;
   right: 0;
+  top: 267em;
 }
 /* .............end block........... */
+/* .....footer........ */
+footer {
+  padding: 40px 220px 50px;
+
+  background: var(--footer-bg-color);
+  color: var(--white-addition-color);
+}
+
+/* ...........end block........... */
