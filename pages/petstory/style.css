@@ -251,7 +251,6 @@ nav {
 }
 .card-item > img:hover {
   transform: scale(1.1, 1.1);
-  border-radius: 5px;
 }
 .card-item > img:hover + .card-bottom {
   position: relative;
