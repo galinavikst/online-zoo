@@ -144,7 +144,7 @@ nav {
   font-weight: 700;
   font-size: 106.496px;
   line-height: 75%;
-  letter-spacing: 20px;
+  letter-spacing: 2px;
 
   text-align: center;
   text-transform: uppercase;
@@ -245,6 +245,33 @@ nav {
 }
 .card-item > img {
   border-radius: 5px 5px 0 0;
+}
+.card-item:hover {
+  border: none;
+}
+.card-item > img:hover {
+  transform: scale(1.1, 1.1);
+  border-radius: 5px;
+}
+.card-item > img:hover + .card-bottom {
+  position: relative;
+  transform: scale(1.1, 1.1);
+  border-radius: 0 0 5px 5px;
+  animation: card 0.2s linear 0s 1 normal forwards;
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
+}
+@keyframes card {
+  from {
+    top: 0;
+    background-color: var(--gray-ligth-bg-color);
+    color: var(--white-addition-color);
+  }
+  to {
+    top: -11%;
+    background-color: var(--gray-ligth-bg-color);
+    color: var(--white-addition-color);
+  }
 }
 .card-bottom {
   display: flex;
