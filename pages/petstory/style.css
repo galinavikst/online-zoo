@@ -59,6 +59,10 @@ body {
   width: 1600px;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
+  background: var(--gray-ligth-bg-color);
+}
+.page {
+  background: var(--white-addition-color);
 }
 
 /* .......header .....*/
@@ -140,6 +144,7 @@ nav {
   font-weight: 700;
   font-size: 106.496px;
   line-height: 75%;
+  letter-spacing: 20px;
 
   text-align: center;
   text-transform: uppercase;
@@ -150,6 +155,7 @@ nav {
   color: var(--secondary-accent-color);
 }
 .hero-button {
+  font-family: inherit;
   display: block;
   margin: 40px auto;
   padding: 15px;
@@ -206,12 +212,26 @@ nav {
 }
 /* ...........end block........ */
 /* .........pets cards....... */
-.cards {
-  padding: 0 220px;
+.animals-card {
+  padding-bottom: 100px;
+  background-image: url("../../assets/icons/palm_foto.png"),
+    url("../../assets/icons/strelitzia 1.png");
+  background-repeat: no-repeat;
+  background-position: bottom left, bottom right;
 }
+.scroll-card-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  padding: 0 20px;
+}
+
 .card-list {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -252,6 +272,7 @@ nav {
   color: var(--black-bg-color);
 }
 .choose-favorite-btn {
+  font-family: inherit;
   display: block;
   font-weight: 500;
   font-size: 16px;
@@ -260,7 +281,7 @@ nav {
   text-transform: uppercase;
   width: 290px;
   padding: 15px 0;
-  margin: 80px auto 100px;
+  margin: 80px auto 0;
 
   border: none;
   border-radius: 25px;
@@ -295,25 +316,6 @@ nav {
 .scroll-btn:active,
 .choose-favorite-btn:active {
   background: var(--activ-addition-color);
-}
-.scroll-btn.right {
-  position: absolute;
-  left: 88%;
-  bottom: -295%;
-}
-.scroll-btn.left {
-  position: absolute;
-  left: 133px;
-  bottom: -295%;
-}
-.strelitzia-img {
-  position: absolute;
-  top: 466%;
-  right: 0;
-}
-.palm-img {
-  position: absolute;
-  top: 434%;
 }
 /* .......block end............ */
 /* ............pick-and-feed....... */
@@ -421,6 +423,9 @@ nav {
 /* ..............testimonial......... */
 .testimonials {
   padding: 140px 220px 180px;
+  background-image: url("../../assets/icons/leav_foto.svg");
+  background-repeat: no-repeat;
+  background-position: right 124%;
 }
 .testimonials h2 {
   font-size: 36px;
@@ -511,6 +516,7 @@ input[type="range"]::-webkit-slider-thumb {
   background: var(--accent-color);
 }
 .leave-feedback-bnt {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
@@ -563,6 +569,7 @@ footer {
   background: transparent;
 }
 .footer-submit-btn {
+  font-family: inherit;
   font-size: 16px;
   line-height: 140%;
   border-radius: 5px;
