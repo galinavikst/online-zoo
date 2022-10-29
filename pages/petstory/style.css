@@ -428,6 +428,7 @@ nav {
   background-position: right 124%;
 }
 .testimonials h2 {
+  margin: 0;
   font-size: 36px;
   line-height: 130%;
   text-align: center;
