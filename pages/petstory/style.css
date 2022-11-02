@@ -156,7 +156,7 @@ nav {
 .hero-button {
   font-family: inherit;
   display: block;
-  margin: 40px auto;
+  margin: 40px auto 100px;
   padding: 15px;
   font-weight: 500;
   font-size: 16px;
@@ -629,7 +629,7 @@ footer {
   width: 300px;
   padding: 15px 0;
   border-radius: 5px;
-  margin: 75px 0 45px;
+  margin: 68px 0 45px;
 
   background: var(--orange-gradient);
   color: var(--white-addition-color);
