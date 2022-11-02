@@ -67,12 +67,17 @@ body {
 
 /* .......header .....*/
 header {
-  display: flex;
   padding: 0 220px;
   background-color: var(--black-bg-color);
 }
 nav {
-  margin: auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header-box {
+  display: flex;
 }
 .nav-list {
   display: flex;
@@ -80,13 +85,15 @@ nav {
   padding: 0;
 }
 .header-logo {
-  margin: 15px 30px;
+  padding: 4px;
+  height: 45px;
+  margin: 14px 30px;
   vertical-align: middle;
   color: var(--white-addition-color);
   border: 1.18841px solid var(--white-addition-color);
   border-radius: 2px;
   font-size: 19.0145px;
-  line-height: 120%;
+  line-height: 110%;
   font-style: normal;
   font-weight: 400;
   text-align: center;
@@ -105,10 +112,6 @@ nav {
   line-height: 140%;
   color: var(--white-addition-color);
   text-decoration: none;
-}
-.designed-by-link {
-  position: absolute;
-  right: 428px;
 }
 .nav-link:hover,
 .nav-link:focus,
