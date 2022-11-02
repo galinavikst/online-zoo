@@ -107,8 +107,8 @@ nav {
   text-decoration: none;
 }
 .designed-by-link {
-  position: fixed;
-  right: 438px;
+  position: absolute;
+  right: 428px;
 }
 .nav-link:hover,
 .nav-link:focus,
@@ -177,7 +177,7 @@ nav {
 /* .......end hero..... */
 /* ........backstage section....... */
 .backstage {
-  padding: 180px 220px;
+  padding: 140px 220px;
   display: flex;
   background: url("../../assets/icons/flower_foto1.png") no-repeat 100% 10px;
 }
@@ -339,6 +339,7 @@ nav {
   background: var(--hover-btn-color);
   cursor: pointer;
 }
+.hero-button:active,
 .scroll-btn:active,
 .choose-favorite-btn:active {
   background: var(--activ-addition-color);
@@ -347,7 +348,7 @@ nav {
 /* ............pick-and-feed....... */
 .block-pick-and-feed {
   background: var(--orange-grad);
-  padding: 70px 220px 50px;
+  padding: 70px 220px 100px;
 }
 .pick-and-feed {
   width: 1160px;
