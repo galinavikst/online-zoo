@@ -89,7 +89,6 @@ nav {
   line-height: 120%;
   font-style: normal;
   font-weight: 400;
-  padding: 4px;
   text-align: center;
 }
 .logo-bamboo {
@@ -108,8 +107,8 @@ nav {
   text-decoration: none;
 }
 .designed-by-link {
-  position: relative;
-  left: 19em;
+  position: fixed;
+  right: 438px;
 }
 .nav-link:hover,
 .nav-link:focus,
