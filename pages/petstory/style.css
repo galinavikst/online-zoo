@@ -87,7 +87,7 @@ nav {
 .header-logo {
   padding: 4px;
   height: 45px;
-  margin: 14px 30px;
+  margin: 14px 30px 14px 0;
   vertical-align: middle;
   color: var(--white-addition-color);
   border: 1.18841px solid var(--white-addition-color);
@@ -112,6 +112,9 @@ nav {
   line-height: 140%;
   color: var(--white-addition-color);
   text-decoration: none;
+}
+.designed-by-link {
+  margin: 0;
 }
 .nav-link:hover,
 .nav-link:focus,
@@ -139,10 +142,12 @@ nav {
 }
 .hero-info {
   position: relative;
-  bottom: 42%;
+  bottom: 40%;
   right: 10%;
 }
 .hero-info h2 {
+  margin: 0;
+  margin-top: 58px;
   font-weight: 700;
   font-size: 106.496px;
   line-height: 75%;
@@ -159,7 +164,7 @@ nav {
 .hero-button {
   font-family: inherit;
   display: block;
-  margin: 40px auto 100px;
+  margin: 60px auto 100px;
   padding: 15px;
   font-weight: 500;
   font-size: 16px;
@@ -355,7 +360,7 @@ nav {
 }
 .pick-and-feed {
   width: 1160px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   border: none;
   border-radius: 20px;
 
@@ -420,7 +425,7 @@ nav {
 .description-icon {
   display: flex;
   justify-content: center;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 .description-icon p {
   font-size: 16px;
@@ -632,7 +637,7 @@ footer {
   width: 300px;
   padding: 15px 0;
   border-radius: 5px;
-  margin: 68px 0 45px;
+  margin: 68px 0 38px;
 
   background: var(--orange-gradient);
   color: var(--white-addition-color);
