@@ -1,0 +1,124 @@
+:root {
+  --black-bg-color: #000;
+  --footer-bg-color: #111115;
+  --main-text-color: #333b41;
+  --white-addition-color: #fff;
+  --accent-color: #fe9013;
+  --mistake-color: #d31414;
+  --secondary-accent-color: #ffee2e;
+  --bg-pink-color: rgba(253, 253, 255, 0.52);
+  --orange-gradient: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  --hover-btn-color: #e47209;
+  --activ-addition-color: #4b9200;
+  --gray-ligth-bg-color: #f1f3f2;
+  --gray-input-color-bg: #f5f7f6;
+  --gray-text: #bdbdbd;
+  --gray-testimonial-color: #767474;
+  --pink-grad: linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+
+  --orange-grad: linear-gradient(
+      315.75deg,
+      rgba(254, 210, 144, 0.7) 30.06%,
+      #febdab 100.95%,
+      rgba(254, 210, 144, 0.7) 106.36%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+}
+
+body {
+  width: 1600px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  background: var(--gray-ligth-bg-color);
+}
+.page {
+  background: var(--white-addition-color);
+}
+
+/* .......header .....*/
+header {
+  padding: 0 220px;
+  background-color: var(--black-bg-color);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header-box {
+  display: flex;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.header-logo {
+  padding: 4px;
+  height: 45px;
+  margin: 14px 30px 14px 0;
+  vertical-align: middle;
+  color: var(--white-addition-color);
+  border: 1.18841px solid var(--white-addition-color);
+  border-radius: 2px;
+  font-size: 19.0145px;
+  line-height: 110%;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+.logo-bamboo {
+  position: relative;
+  left: 5px;
+}
+.header-logo span {
+  position: relative;
+  right: 7px;
+}
+.nav-link {
+  margin: 0 30px;
+  font-weight: 500;
+  line-height: 140%;
+  color: var(--white-addition-color);
+  text-decoration: none;
+}
+.designed-by-link {
+  margin: 0;
+}
+.nav-link:hover,
+.nav-link:focus,
+.active {
+  color: var(--accent-color);
+}
+/* ....end block... */
