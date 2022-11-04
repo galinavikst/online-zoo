@@ -8,6 +8,8 @@
   --secondary-accent-color: #ffee2e;
   --bg-pink-color: rgba(253, 253, 255, 0.52);
   --orange-gradient: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  --progress-bar-bg: #404950;
+
   --hover-btn-color: #e47209;
   --activ-addition-color: #4b9200;
   --gray-ligth-bg-color: #f1f3f2;
@@ -30,7 +32,6 @@
       #eaf7fe 127.9%,
       #eaf7fe 149.54%
     );
-
   --orange-grad: linear-gradient(
       315.75deg,
       rgba(254, 210, 144, 0.7) 30.06%,
@@ -129,3 +130,198 @@ nav {
   background-position: center;
 }
 /* ..........end block.......... */
+/* ................main............. */
+.donation {
+  padding: 40px 220px 180px;
+  background: var(--orange-grad);
+}
+.donation h3 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 130%;
+  color: var(--white-addition-color);
+}
+.donation-text {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--white-addition-color);
+}
+.donation h2 {
+  margin: 40px 0 50px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 130%;
+  color: var(--accent-color);
+}
+.pick-and-feed {
+  padding: 40px 92px 61px;
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  background: var(--bg-pink-color);
+}
+.pick-and-feed h3 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--accent-color);
+}
+.pick-and-feed p {
+  font-size: 24px;
+  line-height: 120%;
+}
+.number-panda {
+  margin: 48px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.number .number4 {
+  margin: 35px 0 0;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 80%;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--black-bg-color);
+}
+.number .text {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+}
+.x-icon {
+  margin: 0 64px 0 11px;
+}
+.donation .amount-word {
+  margin: 0 0 17px;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--black-bg-color);
+}
+.progress-bar {
+  padding: 0 26px;
+  display: flex;
+  align-items: center;
+  height: 27px;
+  border-radius: 2px;
+  background: var(--progress-bar-bg);
+}
+.radio-border-lg {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-color);
+  width: 36px;
+  height: 36px;
+}
+.radio-border-sm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-color);
+}
+
+.radio-input[name="amount"] {
+  margin: 0;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--secondary-accent-color);
+}
+.radio-input[name="amount"]:checked ~ .radio-border-lg {
+  display: flex;
+}
+.progress-line {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 2px;
+  background: var(--gray-testimonial-color);
+}
+.label-amounts {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.label-amount {
+  display: inline-block;
+  margin: 12px 0 50px;
+  width: 128px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+.form-feed-friend {
+  text-align: center;
+}
+.input-another-amount {
+  width: 268px;
+  font-size: 16px;
+  line-height: 140%;
+  padding: 16px 9px;
+  color: var(--gray-text);
+  background: transparent;
+  border: 1px solid var(--gray-text);
+  border-radius: 2px;
+}
+.form-radio-input {
+  margin: 25px 0 30px;
+}
+.input-period {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--accent-color);
+  border-radius: 50%;
+}
+.input-period:checked {
+  background: var(--accent-color);
+}
+.input-label {
+  display: inline;
+  margin: 0 25px;
+}
+.form-radio-input .label-period {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.feed-now {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  width: 298px;
+  border: none;
+  padding: 16px 0;
+  border-radius: 25px;
+  background: var(--orange-gradient);
+  color: var(--white-addition-color);
+}
+.form-feed-friend .share-text {
+  margin: 30px 0 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--main-text-color);
+}
+/* ................and block........... */
