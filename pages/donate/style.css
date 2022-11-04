@@ -122,3 +122,10 @@ nav {
   color: var(--accent-color);
 }
 /* ....end block... */
+/* ...............hero.............. */
+.hero {
+  background-image: url(../../assets/images/Giant\ Panda.jpg);
+  height: 390px;
+  background-position: center;
+}
+/* ..........end block.......... */
