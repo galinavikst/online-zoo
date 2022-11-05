@@ -325,3 +325,133 @@ nav {
   color: var(--main-text-color);
 }
 /* ................and block........... */
+/* ..............footer............... */
+footer {
+  padding: 40px 220px 50px;
+
+  background: var(--footer-bg-color);
+  color: var(--white-addition-color);
+}
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe-form label {
+  display: block;
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 14px;
+}
+.subscribe-form input {
+  width: 211px;
+  border: 0.7px solid var(--accent-color);
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 140%;
+  padding: 10px;
+  color: #bdbdbd;
+  background: transparent;
+}
+.footer-submit-btn {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 140%;
+  border-radius: 5px;
+  padding: 10px 0;
+  margin-left: 10px;
+  width: 129px;
+
+  color: var(--black-bg-color);
+  background: var(--gray-ligth-bg-color);
+  border: 1px solid var(--black-bg-color);
+}
+.footer-submit-btn:hover {
+  cursor: pointer;
+}
+.footer-submit-btn:active,
+.footer-submit-btn:focus {
+  color: var(--activ-addition-color);
+  border: 1px solid var(--activ-addition-color);
+  cursor: pointer;
+}
+.footer-donate-link {
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  width: 300px;
+  padding: 15px 0;
+  border-radius: 5px;
+  margin: 68px 0 38px;
+
+  background: var(--orange-gradient);
+  color: var(--white-addition-color);
+}
+.footer-donate-link:active {
+  background: var(--activ-addition-color);
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+footer .nav-list {
+  margin: 0 0 0 11%;
+}
+.about-link {
+  cursor: default;
+}
+.social-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.social-list a {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-decoration: none;
+  color: var(--white-addition-color);
+}
+
+.social-list a:active,
+.social-list a:focus {
+  color: var(--activ-addition-color);
+}
+.social-list a:active > div,
+.social-list a:focus > div {
+  background: var(--activ-addition-color);
+}
+.social-list li {
+  margin-top: 10px;
+}
+.icon-bg {
+  height: 26px;
+  width: 26px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--gray-testimonial-color);
+  margin-right: 12px;
+}
+.social-list p {
+  margin: 0;
+}
+.school,
+.designer {
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 130%;
+  margin: 0;
+}
+.designer {
+  margin-bottom: 10px;
+}
+/* ...........end block........... */
