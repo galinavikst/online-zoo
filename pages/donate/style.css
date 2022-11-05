@@ -149,13 +149,14 @@ nav {
   color: var(--white-addition-color);
 }
 .donation h2 {
-  margin: 40px 0 50px;
+  margin: 50px 0 61px;
   font-weight: 400;
   font-size: 36px;
   line-height: 130%;
   color: var(--accent-color);
 }
 .pick-and-feed {
+  width: 85%;
   padding: 40px 92px 61px;
   border-radius: 20px;
   background: var(--bg-pink-color);
@@ -172,13 +173,13 @@ nav {
   line-height: 120%;
 }
 .number-panda {
-  margin: 48px 0;
+  margin: 55px 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .number .number4 {
-  margin: 35px 0 0;
+  margin: 77px 0 0;
   font-weight: 500;
   font-size: 72px;
   line-height: 80%;
@@ -193,7 +194,7 @@ nav {
   text-align: center;
 }
 .x-icon {
-  margin: 0 64px 0 11px;
+  margin: 42px 64px 0 11px;
 }
 .donation .amount-word {
   margin: 0 0 17px;
