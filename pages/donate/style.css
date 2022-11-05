@@ -303,8 +303,7 @@ nav {
   font-size: 16px;
   line-height: 140%;
 }
-
-.feed-now {
+.feed-now-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
@@ -316,6 +315,11 @@ nav {
   border-radius: 25px;
   background: var(--orange-gradient);
   color: var(--white-addition-color);
+}
+.feed-now-btn:hover,
+.feed-now-btn:focus {
+  background: var(--hover-btn-color);
+  cursor: pointer;
 }
 .form-feed-friend .share-text {
   margin: 30px 0 0;
@@ -389,6 +393,10 @@ footer {
 
   background: var(--orange-gradient);
   color: var(--white-addition-color);
+}
+.footer-donate-link:hover,
+.footer-donate-link:focus {
+  background: var(--hover-btn-color);
 }
 .footer-donate-link:active {
   background: var(--activ-addition-color);
