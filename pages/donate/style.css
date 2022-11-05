@@ -157,7 +157,6 @@ nav {
 }
 .pick-and-feed {
   padding: 40px 92px 61px;
-  backdrop-filter: blur(2px);
   border-radius: 20px;
   background: var(--bg-pink-color);
 }
@@ -210,27 +209,14 @@ nav {
   border-radius: 2px;
   background: var(--progress-bar-bg);
 }
-.radio-border-lg {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  border: 2px solid var(--accent-color);
-  width: 36px;
-  height: 36px;
-}
-.radio-border-sm {
+/* fieldset {
   display: flex;
+  padding: 5px;
+  margin: 0;
   justify-content: center;
-  align-items: center;
-  width: 18px;
-  height: 18px;
   border-radius: 50%;
-  border: 2px solid var(--accent-color);
-}
-
+  border: 1px solid var(--accent-color);
+} */
 .radio-input[name="amount"] {
   margin: 0;
   appearance: none;
@@ -239,8 +225,14 @@ nav {
   border-radius: 50%;
   background-color: var(--secondary-accent-color);
 }
-.radio-input[name="amount"]:checked ~ .radio-border-lg {
-  display: flex;
+
+.radio-input[name="amount"]:checked {
+  width: 25px;
+  height: 25px;
+  background: var(--accent-color);
+}
+.radio-input[name="amount"]:checked ~ .label-amounts .label-amount {
+  color: var(--accent-color);
 }
 .progress-line {
   display: flex;
@@ -260,7 +252,7 @@ nav {
 .label-amount {
   display: inline-block;
   margin: 12px 0 50px;
-  width: 128px;
+  width: 131px;
   font-weight: 500;
   font-size: 26px;
   line-height: 140%;
@@ -270,16 +262,29 @@ nav {
 .form-feed-friend {
   text-align: center;
 }
+.input-another-amount::-webkit-inner-spin-button {
+  appearance: none;
+}
 .input-another-amount {
+  background-image: url(../../assets/icons/usd.svg);
+  background-repeat: no-repeat;
+  background-position: right 9px center;
+  background-color: inherit;
   width: 268px;
   font-size: 16px;
   line-height: 140%;
   padding: 16px 9px;
-  color: var(--gray-text);
-  background: transparent;
-  border: 1px solid var(--gray-text);
+  opacity: 0.6;
   border-radius: 2px;
+  color: var(--black-bg-color);
+  border: 1px solid var(--gray-testimonial-color);
 }
+.input-another-amount:active,
+.input-another-amount:focus {
+  border: var(--activ-addition-color);
+  color: var(--activ-addition-color);
+}
+
 .form-radio-input {
   margin: 25px 0 30px;
 }
