@@ -251,7 +251,7 @@ nav {
   left: -23px;
   display: inline-block;
   margin: 37px 0 25px;
-  width: 81px;
+  width: 82px;
   font-weight: 500;
   font-size: 26px;
   line-height: 140%;
@@ -275,7 +275,7 @@ nav {
   padding: 16px 9px;
   opacity: 0.6;
   border-radius: 2px;
-  color: var(--activ-addition-color);
+  color: var(--black-bg-color);
   border: 1px solid var(--gray-testimonial-color);
 }
 .input-another-amount:active,
