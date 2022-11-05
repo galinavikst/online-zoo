@@ -218,6 +218,8 @@ nav {
   border: 1px solid var(--accent-color);
 } */
 .radio-input[name="amount"] {
+  position: absolute;
+  top: 5px;
   margin: 0;
   appearance: none;
   width: 10px;
@@ -227,12 +229,14 @@ nav {
 }
 
 .radio-input[name="amount"]:checked {
-  width: 25px;
-  height: 25px;
   background: var(--accent-color);
+  transform: scale(3, 3);
 }
-.radio-input[name="amount"]:checked ~ .label-amounts .label-amount {
+.radio-input[name="amount"]:checked ~ label {
   color: var(--accent-color);
+}
+.radio-input[name="amount"]:checked ~ label > svg > path {
+  fill: var(--accent-color);
 }
 .progress-line {
   display: flex;
@@ -250,9 +254,11 @@ nav {
   grid-row-gap: 0px;
 }
 .label-amount {
+  position: relative;
+  left: -23px;
   display: inline-block;
-  margin: 12px 0 50px;
-  width: 131px;
+  margin: 37px 0 25px;
+  width: 81px;
   font-weight: 500;
   font-size: 26px;
   line-height: 140%;
@@ -299,6 +305,12 @@ nav {
   background: var(--accent-color);
 }
 .input-label {
+  position: relative;
+  bottom: 23px;
+  display: inline;
+  margin: 0 25px;
+}
+.feed-input-label {
   display: inline;
   margin: 0 25px;
 }
