@@ -210,14 +210,6 @@ nav {
   border-radius: 2px;
   background: var(--progress-bar-bg);
 }
-/* fieldset {
-  display: flex;
-  padding: 5px;
-  margin: 0;
-  justify-content: center;
-  border-radius: 50%;
-  border: 1px solid var(--accent-color);
-} */
 .radio-input[name="amount"] {
   position: absolute;
   top: 5px;
@@ -283,12 +275,12 @@ nav {
   padding: 16px 9px;
   opacity: 0.6;
   border-radius: 2px;
-  color: var(--black-bg-color);
+  color: var(--activ-addition-color);
   border: 1px solid var(--gray-testimonial-color);
 }
 .input-another-amount:active,
 .input-another-amount:focus {
-  border: var(--activ-addition-color);
+  border: 1px solid var(--activ-addition-color);
   color: var(--activ-addition-color);
 }
 
