@@ -220,16 +220,27 @@ nav {
   border-radius: 50%;
   background-color: var(--secondary-accent-color);
 }
-
+.radio-input[name="amount"]::before {
+  content: "";
+  display: none;
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  width: 20px;
+  padding-bottom: 14px;
+  height: 5px;
+}
 .radio-input[name="amount"]:checked {
-  background: var(--accent-color);
-  transform: scale(3, 3);
+  outline: 2px solid var(--accent-color);
+  outline-offset: 12px;
+}
+.radio-input[name="amount"]:checked::before {
+  display: block;
 }
 .radio-input[name="amount"]:checked ~ label {
   color: var(--accent-color);
-}
-.radio-input[name="amount"]:checked ~ label > svg > path {
-  fill: var(--accent-color);
 }
 .progress-line {
   display: flex;
@@ -269,6 +280,7 @@ nav {
   background-repeat: no-repeat;
   background-position: right 9px center;
   background-color: inherit;
+  font-family: inherit;
   width: 268px;
   font-size: 16px;
   line-height: 140%;
@@ -280,6 +292,7 @@ nav {
 }
 .input-another-amount:active,
 .input-another-amount:focus {
+  outline: 0;
   border: 1px solid var(--activ-addition-color);
   color: var(--activ-addition-color);
 }
@@ -319,6 +332,7 @@ nav {
   line-height: 140%;
   text-align: center;
   text-transform: uppercase;
+  font-family: inherit;
   width: 298px;
   border: none;
   padding: 16px 0;
