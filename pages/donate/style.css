@@ -232,14 +232,17 @@ nav {
   padding-bottom: 14px;
   height: 5px;
 }
-.radio-input[name="amount"]:checked {
+.radio-input[name="amount"]:checked,
+.radio-input[name="amount"]:hover {
   outline: 2px solid var(--accent-color);
   outline-offset: 12px;
 }
-.radio-input[name="amount"]:checked::before {
+.radio-input[name="amount"]:checked::before,
+.radio-input[name="amount"]:hover::before {
   display: block;
 }
-.radio-input[name="amount"]:checked ~ label {
+.radio-input[name="amount"]:checked ~ label,
+.radio-input[name="amount"]:hover ~ label {
   color: var(--accent-color);
 }
 .progress-line {
