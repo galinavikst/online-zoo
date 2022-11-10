@@ -398,6 +398,8 @@ footer {
 }
 .footer-submit-btn:hover {
   cursor: pointer;
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 .footer-submit-btn:active,
 .footer-submit-btn:focus {
@@ -453,7 +455,12 @@ footer .nav-list {
   text-decoration: none;
   color: var(--white-addition-color);
 }
-
+.social-list a:hover > div {
+  background: var(--accent-color);
+}
+.social-list a:hover {
+  color: var(--accent-color);
+}
 .social-list a:active,
 .social-list a:focus {
   color: var(--activ-addition-color);
