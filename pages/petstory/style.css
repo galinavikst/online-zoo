@@ -642,7 +642,7 @@ footer {
   width: 300px;
   padding: 15px 0;
   border-radius: 5px;
-  margin: 68px 0 38px;
+  margin: 68px 0 32px;
 
   background: var(--orange-gradient);
   color: var(--white-addition-color);
@@ -719,20 +719,23 @@ footer .nav-list {
   header {
     padding: 0 30px;
   }
+  .nav-link {
+    margin: 0 25px;
+  }
   .hero {
-    height: 504px;
-    background-size: 1065px;
+    height: 501px;
+    background-size: cover;
   }
   .elipse {
     width: 367px;
     height: 367px;
-    margin-top: -15px;
+    margin-top: -14px;
+    margin-left: -44px;
   }
-
   .hero-info {
     position: relative;
     bottom: 43%;
-    right: 0%;
+    right: 7%;
   }
   .hero-info h2 {
     font-weight: 700;
@@ -740,10 +743,10 @@ footer .nav-list {
     line-height: 75%;
   }
   .hero-button {
-    margin: 40px 47px;
+    margin: 45px 100px 47px;
   }
   .backstage {
-    padding: 100px 30px 143px;
+    padding: 109px 30px 120px;
     background: none;
   }
   .img-1000 {
@@ -757,15 +760,24 @@ footer .nav-list {
     top: -9px;
     padding-left: 31px;
   }
+  .backstage h2 {
+    margin: 0 0 23px;
+  }
   .backstage p {
     font-size: 16px;
     line-height: 130%;
+  }
+  .animals-card {
+    padding-bottom: 136px;
+    background-image: url("../../assets/icons/palm_foto1000.png"),
+      url("../../assets/icons/strelitzia 1.png");
+    background-size: 190px, 241px;
   }
   .animal-img {
     width: 295px;
   }
   .card-list {
-    grid-row-gap: 100px;
+    grid-row-gap: 85px;
   }
   .scroll-btn {
     width: 62px;
@@ -778,17 +790,9 @@ footer .nav-list {
     position: relative;
     right: 31em;
   }
-  .animals-card {
-    padding-bottom: 140px;
-    background-image: url("../../assets/icons/palm_foto1000.png"),
-      url("../../assets/icons/strelitzia 1.png");
-    background-size: 190px, 241px;
-  }
+
   .block-pick-and-feed {
     padding: 30px 30px 50px;
-  }
-  .text {
-    padding: 0 49px;
   }
   .pick-and-feed {
     padding-bottom: 50px;
@@ -801,12 +805,15 @@ footer .nav-list {
   }
   .entering-text {
     margin: 20px 0;
+    padding-left: 49px;
   }
   .covid-info {
     margin: 10px 0;
+    padding: 0 49px;
   }
   .donate-info {
     margin: 0;
+    padding: 0 49px;
   }
   .pick-and-feed h3 {
     margin: 40px 0;
@@ -814,7 +821,7 @@ footer .nav-list {
   .testimonials {
     padding: 100px 30px 140px;
     background-position: right 115%;
-    background-size: 188px;
+    background-size: 192px;
   }
   .testimonial-list {
     margin: 30px 0 20px;
@@ -834,5 +841,8 @@ footer .nav-list {
   }
   footer {
     padding: 40px 30px 50px;
+  }
+  .subscribe-form {
+    margin-right: 25px;
   }
 }
