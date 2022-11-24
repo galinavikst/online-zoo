@@ -121,6 +121,41 @@ nav {
 .active {
   color: var(--accent-color);
 }
+/* --- header hamb-menu... */
+input[type="checkbox"] {
+  display: none;
+}
+.hamb-label {
+  padding-top: 36px;
+  cursor: pointer;
+  display: none;
+}
+.hamb-line {
+  display: block;
+  transition: 200ms ease;
+  margin: 1px;
+  width: 18px;
+  height: 2px;
+  background: var(--gray-input-color-bg);
+  border-radius: 2px;
+}
+input[type="checkbox"]:checked ~ .hamb-label span:nth-child(2) {
+  opacity: 0;
+}
+input[type="checkbox"]:checked ~ .hamb-label span:nth-child(1) {
+  transform: rotate(38deg);
+}
+input[type="checkbox"]:checked ~ .hamb-label span:nth-child(3) {
+  transform: rotate(-43deg) translate(4px, -5px);
+}
+input[type="checkbox"]:checked ~ .header-box nav:nth-child(4) {
+  display: block;
+}
+input[type="checkbox"]:checked + .header-box,
+input[type="checkbox"]:checked + #header-nav,
+input[type="checkbox"]:checked + .nav-list {
+  display: block;
+}
 /* ....end block... */
 /* ....hero..... */
 
@@ -412,6 +447,11 @@ nav {
 .donate-instruction {
   display: flex;
   justify-content: center;
+}
+.green-arrow1,
+.green-arrow2 {
+  width: 63px;
+  display: none;
 }
 .block-icon {
   background: var(--white-addition-color);
@@ -722,6 +762,9 @@ footer .nav-list {
   .nav-link {
     margin: 0 25px;
   }
+  .designed-by-link {
+    margin: 0;
+  }
   .hero {
     height: 501px;
     background-size: cover;
@@ -790,7 +833,6 @@ footer .nav-list {
     position: relative;
     right: 31em;
   }
-
   .block-pick-and-feed {
     padding: 30px 30px 50px;
   }
@@ -844,5 +886,136 @@ footer .nav-list {
   }
   .subscribe-form {
     margin-right: 25px;
+  }
+}
+@media screen and (max-width: 640px) {
+  body {
+    width: 640px;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  .hamb-label {
+    display: block;
+  }
+  nav {
+    margin-top: 33px;
+    display: none;
+  }
+  .nav-list {
+    margin: 0;
+  }
+  .nav-item {
+    margin: 14px 0;
+  }
+  .nav-item a {
+    margin: 0;
+  }
+  .designed-by-link {
+    margin: 0;
+  }
+  .hero {
+    height: 373px;
+    background-position: center;
+  }
+  .elipse {
+    width: 237px;
+    height: 237px;
+    margin-top: 12px;
+    margin-left: 7px;
+  }
+  .hero-info h2 {
+    font-size: 54px;
+    margin: 0;
+  }
+  .hero-button {
+    position: absolute;
+    top: 73%;
+    right: 61%;
+  }
+  .backstage {
+    padding: 60px 281px 80px 20px;
+    background: url("../../assets/icons/flower_foto1.png") no-repeat 100% 10px;
+    background-size: 231px 476px;
+  }
+  .img-1000 {
+    display: none;
+  }
+  .backstage-info {
+    padding: 0;
+  }
+  .backstage h3 {
+    margin: 30px 0 20px;
+  }
+  .card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .first-card,
+  .last-card {
+    display: none;
+  }
+  .block-pick-and-feed {
+    padding: 30px 0px 50px;
+  }
+  .arrow {
+    display: none;
+  }
+  .donate-instruction {
+    justify-content: space-around;
+  }
+  .green-arrow1 {
+    display: block;
+    position: absolute;
+    left: 28%;
+  }
+  .green-arrow2 {
+    display: block;
+    position: absolute;
+    left: 61%;
+  }
+  .testimonials {
+    display: block;
+    background-position: right 124%;
+  }
+  .border {
+    overflow: hidden;
+    height: 109px;
+    margin: 10px 0;
+  }
+  .testimonial-list {
+    display: block;
+  }
+  .testimonial-item {
+    height: 73px;
+  }
+  .hide-text {
+    height: 46px;
+  }
+  .input-border {
+    display: none;
+  }
+  .leave-feedback-bnt {
+    margin: 0 auto;
+  }
+  .subscribe-form {
+    display: none;
+  }
+  .social-list p {
+    display: none;
+  }
+  .social-list {
+    position: absolute;
+    right: 0%;
+    margin-bottom: 154px;
+  }
+  footer .nav-list {
+    margin: 0;
+  }
+  .nav-link {
+    margin: 0 20px 0 0px;
   }
 }

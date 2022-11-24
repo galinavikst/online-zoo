@@ -15,9 +15,9 @@
   </head>
   <body>
     <div class="page">
-      <header>
+      <header class="header">
         <div class="header-box">
-          <a href="./">
+          <a href="./" class="logo1600">
             <div>
               <h1 id="petstory" class="header-logo">
                 PetStory
@@ -31,7 +31,7 @@
               </h1>
             </div>
           </a>
-          <nav>
+          <nav id="header-nav">
             <ul class="nav-list">
               <li class="nav-item">
                 <a href="#" class="nav-link active">About</a>
@@ -54,6 +54,11 @@
             >
           </nav>
         </div>
+        <input type="checkbox" id="hamb-menu" />
+        <label for="hamb-menu" class="hamb-label">
+          <span class="hamb-line"></span><span class="hamb-line"></span
+          ><span class="hamb-line"></span>
+        </label>
       </header>
       <main>
         <div class="hero">
@@ -110,7 +115,7 @@
 
             <div class="cards">
               <ul class="card-list">
-                <li class="card-item">
+                <li class="card-item first-card">
                   <img
                     class="animal-img"
                     src="./assets/images/giant-pandas.jpg"
@@ -206,7 +211,7 @@
                     />
                   </div>
                 </li>
-                <li class="card-item">
+                <li class="card-item last-card">
                   <img
                     class="animal-img"
                     src="./assets/images/Penguins.jpg"
@@ -255,6 +260,16 @@
             </p>
             <h3>How it works</h3>
             <div class="donate-instruction">
+              <img
+                class="green-arrow1"
+                src="./assets/icons/green-arrow.svg"
+                alt="green arrow"
+              />
+              <img
+                class="green-arrow2"
+                src="./assets/icons/green-arrow.svg"
+                alt="green arrow"
+              />
               <div class="block-icon">
                 <img
                   src="./assets/icons/pay.png"
