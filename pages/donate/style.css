@@ -156,7 +156,6 @@ nav {
   color: var(--accent-color);
 }
 .pick-and-feed {
-  width: 85%;
   padding: 40px 92px 61px;
   border-radius: 20px;
   background: var(--bg-pink-color);
@@ -498,4 +497,34 @@ footer .nav-list {
 }
 /* ...........end block........... */
 @media screen and (max-width: 1000px) {
+  body {
+    width: 1000px;
+  }
+  header {
+    padding: 0 30px;
+  }
+  /* .nav-link {
+    margin: 0 25px;
+  } */
+  .donation {
+    padding: 40px 30px 30px;
+  }
+  .donation-text {
+    margin: 30px 0 40px;
+  }
+  .donation h2 {
+    margin: 40px 0;
+  }
+  .pick-and-feed {
+    padding: 20px 47px 46px;
+  }
+  .first5000 {
+    display: none;
+  }
+  footer {
+    padding: 40px 30px 50px;
+  }
+  .subscribe-form {
+    margin-right: 25px;
+  }
 }
