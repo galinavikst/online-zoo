@@ -503,9 +503,9 @@ footer .nav-list {
   header {
     padding: 0 30px;
   }
-  /* .nav-link {
+  .nav-link {
     margin: 0 25px;
-  } */
+  }
   .donation {
     padding: 40px 30px 30px;
   }
@@ -518,13 +518,41 @@ footer .nav-list {
   .pick-and-feed {
     padding: 20px 47px 46px;
   }
+  .pick-and-feed p {
+    margin: 13px 0;
+  }
   .first5000 {
     display: none;
+  }
+
+  .number-panda {
+    margin: 55px 15px 48px 0;
+  }
+  .choose-amount {
+    padding: 0 16px;
+  }
+  .label-amount {
+    width: 101px;
+  }
+  .input-label {
+    margin: 0 14px;
+  }
+  .form-radio-input {
+    margin: 20px 0 30px;
+  }
+  .form-feed-friend .share-text {
+    margin: 27px 0 0;
   }
   footer {
     padding: 40px 30px 50px;
   }
+  .nav-link {
+    margin: 0 20px;
+  }
   .subscribe-form {
     margin-right: 25px;
+  }
+  .footer-donate-link {
+    margin: 68px 0 32px;
   }
 }
