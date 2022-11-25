@@ -639,4 +639,89 @@ footer .nav-list {
   .designed-by-link {
     margin: 0;
   }
+  .hero {
+    height: 335px;
+  }
+  .donation {
+    padding: 30px 20px 30px;
+  }
+  .donation h3 {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .donation-text {
+    margin: 19px 0 30px;
+  }
+  .donation h2 {
+    margin: 31px 0px;
+  }
+  .pick-and-feed {
+    padding: 27px 0px 46px;
+  }
+  .pick-and-feed p {
+    text-align: center;
+    margin: 21px 0;
+  }
+  .number-panda {
+    margin: 43px 11px 44px 0;
+  }
+  .donation .amount-word {
+    margin: 0 0 6px 10px;
+    text-align: start;
+  }
+  .choose-amount {
+    padding: 0;
+  }
+  .first5000,
+  .usd2000,
+  .usd1000 {
+    display: none;
+  }
+  .progress-bar {
+    padding: 0 39px;
+  }
+  .input-label {
+    margin: 0px 36px;
+  }
+  .label-amount {
+    width: 58px;
+  }
+  .input-another-amount {
+    width: 162px;
+    padding: 8px 9px;
+  }
+  .form-radio-input {
+    margin: 29px 0 30px;
+  }
+  .feed-input-label {
+    margin: 0px 36px 0 9px;
+  }
+  footer {
+    position: relative;
+    padding: 12px 21px 11px;
+  }
+  footer .nav-list {
+    margin: 0;
+  }
+  .footer-donate-link {
+    margin: 29px 0 69px;
+    width: 296px;
+  }
+  .nav-link {
+    margin: 0 37px 0 0px;
+  }
+  .subscribe-form {
+    display: none;
+  }
+  .social-list p {
+    display: none;
+  }
+  .social-list {
+    position: absolute;
+    right: 1%;
+    margin-bottom: 94px;
+  }
+  .social-list li {
+    margin-top: 20px;
+  }
 }

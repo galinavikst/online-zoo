@@ -1084,20 +1084,7 @@ footer .nav-list {
     margin: 0 auto;
     width: 240px;
   }
-  .subscribe-form {
-    display: none;
-  }
-  .social-list p {
-    display: none;
-  }
-  .social-list {
-    position: absolute;
-    right: 1%;
-    margin-bottom: 94px;
-  }
-  .social-list li {
-    margin-top: 20px;
-  }
+
   footer {
     position: relative;
     padding: 12px 21px 11px;
@@ -1111,5 +1098,19 @@ footer .nav-list {
   }
   .nav-link {
     margin: 0 37px 0 0px;
+  }
+  .subscribe-form {
+    display: none;
+  }
+  .social-list p {
+    display: none;
+  }
+  .social-list {
+    position: absolute;
+    right: 1%;
+    margin-bottom: 94px;
+  }
+  .social-list li {
+    margin-top: 20px;
   }
 }
