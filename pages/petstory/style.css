@@ -126,7 +126,7 @@ input[type="checkbox"] {
   display: none;
 }
 .hamb-label {
-  padding-top: 36px;
+  padding-top: 11px;
   cursor: pointer;
   display: none;
 }
@@ -893,11 +893,27 @@ footer .nav-list {
     width: 640px;
   }
   header {
+    padding: 0 16px;
     position: sticky;
     top: 0;
     z-index: 1;
     display: flex;
     justify-content: space-between;
+  }
+  .header-logo {
+    height: 30px;
+    padding: 2px;
+    margin: 0;
+    border: none;
+    font-size: 12.2899px;
+    line-height: 120%;
+  }
+  .header-logo span {
+    top: -3px;
+  }
+  .logo-bamboo {
+    height: 13px;
+    left: 1px;
   }
   .hamb-label {
     display: block;
@@ -919,28 +935,33 @@ footer .nav-list {
     margin: 0;
   }
   .hero {
-    height: 373px;
+    height: 339px;
     background-position: center;
   }
   .elipse {
     width: 237px;
     height: 237px;
-    margin-top: 12px;
-    margin-left: 7px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .hero-info {
+    bottom: 44%;
+    right: -5%;
   }
   .hero-info h2 {
     font-size: 54px;
     margin: 0;
+    letter-spacing: 1px;
   }
   .hero-button {
     position: absolute;
-    top: 73%;
-    right: 61%;
+    top: 75%;
+    right: 74%;
   }
   .backstage {
-    padding: 60px 281px 80px 20px;
+    padding: 69px 130px 58px 20px;
     background: url("../../assets/icons/flower_foto1.png") no-repeat 100% 10px;
-    background-size: 231px 476px;
+    background-size: 128px 455px;
   }
   .img-1000 {
     display: none;
@@ -951,35 +972,95 @@ footer .nav-list {
   .backstage h3 {
     margin: 30px 0 20px;
   }
+  .animals-card {
+    padding-bottom: 100px;
+    background-image: url(../../assets/icons/palm_foto.png),
+      url(../../assets/icons/strelitzia\ 1.png);
+    background-size: 130px, 179px;
+  }
   .card-list {
     grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 92px;
+  }
+  .animal-img {
+    width: 284px;
   }
   .first-card,
   .last-card {
     display: none;
   }
+  .card-item h2 {
+    font-size: 13px;
+  }
+  .card-bottom {
+    padding: 3px 11px 1px;
+  }
+  .description p {
+    font-size: 12px;
+  }
+  .scroll-btn.left {
+    left: 23em;
+  }
+  .scroll-btn.right {
+    right: 23em;
+  }
+  .choose-favorite-btn {
+    width: 300px;
+    margin: 59px auto 0;
+  }
   .block-pick-and-feed {
-    padding: 30px 0px 50px;
+    padding: 22px 0 50px;
+  }
+  .pick-and-feed h2 {
+    padding-bottom: 61px;
+    padding-top: 8px;
+    font-size: 42px;
+  }
+  .entering-text {
+    padding-left: 20px;
+    font-size: 22px;
+  }
+  .covid-info,
+  .donate-info {
+    padding: 0 19px;
+  }
+  .pick-and-feed h3 {
+    margin: 32px 0 20px;
   }
   .arrow {
     display: none;
   }
   .donate-instruction {
+    position: relative;
     justify-content: space-around;
   }
   .green-arrow1 {
     display: block;
     position: absolute;
-    left: 28%;
+    left: 24%;
+    top: -10%;
+    width: 86px;
   }
   .green-arrow2 {
     display: block;
     position: absolute;
-    left: 61%;
+    left: 57%;
+    top: -10%;
+    width: 87px;
+  }
+  .description-icon p {
+    margin: 30px 20px;
+    justify-content: space-around;
+    margin-bottom: 9px;
+  }
+  .feed-friend-link {
+    width: 300px;
   }
   .testimonials {
+    padding: 28px 21px 80px;
     display: block;
-    background-position: right 124%;
+    background-position: right 115%;
+    background-size: 120px;
   }
   .border {
     overflow: hidden;
@@ -988,6 +1069,7 @@ footer .nav-list {
   }
   .testimonial-list {
     display: block;
+    margin: 30px 0 41px;
   }
   .testimonial-item {
     height: 73px;
@@ -1000,6 +1082,7 @@ footer .nav-list {
   }
   .leave-feedback-bnt {
     margin: 0 auto;
+    width: 240px;
   }
   .subscribe-form {
     display: none;
@@ -1009,13 +1092,24 @@ footer .nav-list {
   }
   .social-list {
     position: absolute;
-    right: 0%;
-    margin-bottom: 154px;
+    right: 1%;
+    margin-bottom: 94px;
+  }
+  .social-list li {
+    margin-top: 20px;
+  }
+  footer {
+    position: relative;
+    padding: 12px 21px 11px;
   }
   footer .nav-list {
     margin: 0;
   }
+  .footer-donate-link {
+    margin: 29px 0 69px;
+    width: 296px;
+  }
   .nav-link {
-    margin: 0 20px 0 0px;
+    margin: 0 37px 0 0px;
   }
 }

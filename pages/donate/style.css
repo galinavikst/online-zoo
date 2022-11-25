@@ -122,6 +122,41 @@ nav {
 .active {
   color: var(--accent-color);
 }
+/* --- header hamb-menu... */
+input[type="checkbox"] {
+  display: none;
+}
+.hamb-label {
+  padding-top: 11px;
+  cursor: pointer;
+  display: none;
+}
+.hamb-line {
+  display: block;
+  transition: 200ms ease;
+  margin: 1px;
+  width: 18px;
+  height: 2px;
+  background: var(--gray-input-color-bg);
+  border-radius: 2px;
+}
+input[type="checkbox"]:checked ~ .hamb-label span:nth-child(2) {
+  opacity: 0;
+}
+input[type="checkbox"]:checked ~ .hamb-label span:nth-child(1) {
+  transform: rotate(38deg);
+}
+input[type="checkbox"]:checked ~ .hamb-label span:nth-child(3) {
+  transform: rotate(-43deg) translate(4px, -5px);
+}
+input[type="checkbox"]:checked ~ .header-box nav:nth-child(4) {
+  display: block;
+}
+input[type="checkbox"]:checked + .header-box,
+input[type="checkbox"]:checked + #header-nav,
+input[type="checkbox"]:checked + .nav-list {
+  display: block;
+}
 /* ....end block... */
 /* ...............hero.............. */
 .hero {
@@ -556,5 +591,52 @@ footer .nav-list {
   }
   .footer-donate-link {
     margin: 68px 0 32px;
+  }
+}
+@media screen and (max-width: 640px) {
+  body {
+    width: 640px;
+  }
+  header {
+    display: flex;
+    padding: 0 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    justify-content: space-between;
+  }
+  .header-logo {
+    height: 30px;
+    padding: 2px;
+    margin: 0;
+    border: none;
+    font-size: 12.2899px;
+    line-height: 120%;
+  }
+  .header-logo span {
+    top: -3px;
+  }
+  .logo-bamboo {
+    height: 13px;
+    left: 1px;
+  }
+  .hamb-label {
+    display: block;
+  }
+  nav {
+    margin-top: 33px;
+    display: none;
+  }
+  .nav-list {
+    margin: 0;
+  }
+  .nav-item {
+    margin: 14px 0;
+  }
+  .nav-item a {
+    margin: 0;
+  }
+  .designed-by-link {
+    margin: 0;
   }
 }
