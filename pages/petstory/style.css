@@ -1009,10 +1009,12 @@ footer .nav-list {
     margin: 59px auto 0;
   }
   .block-pick-and-feed {
-    padding: 22px 0 50px;
+    padding: 22px 0 19px;
+  }
+  .pick-and-feed {
+    padding-bottom: 60px;
   }
   .pick-and-feed h2 {
-    padding-bottom: 61px;
     padding-top: 8px;
     font-size: 42px;
   }
@@ -1048,6 +1050,9 @@ footer .nav-list {
     top: -10%;
     width: 87px;
   }
+  .description-icon {
+    margin-bottom: 30px;
+  }
   .description-icon p {
     margin: 30px 20px;
     justify-content: space-around;
@@ -1057,10 +1062,13 @@ footer .nav-list {
     width: 300px;
   }
   .testimonials {
-    padding: 28px 21px 80px;
+    padding: 60px 21px 80px;
     display: block;
     background-position: right 115%;
     background-size: 120px;
+  }
+  .testimonials h2 {
+    font-weight: 400;
   }
   .border {
     overflow: hidden;
