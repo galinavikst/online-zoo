@@ -539,22 +539,25 @@ footer .nav-list {
     padding: 0 30px;
   }
   .nav-link {
-    margin: 0 25px;
+    margin: 0 16px 0 32px;
   }
   .designed-by-link {
     margin: 0;
   }
   .donation {
-    padding: 40px 30px 30px;
+    padding: 40px 33px 30px;
   }
   .donation-text {
     margin: 30px 0 40px;
+  }
+  .officially-opened {
+    padding-right: 85px;
   }
   .donation h2 {
     margin: 40px 0;
   }
   .pick-and-feed {
-    padding: 20px 47px 46px;
+    padding: 20px 45px 46px;
   }
   .pick-and-feed p {
     margin: 13px 0;
@@ -563,13 +566,20 @@ footer .nav-list {
     display: none;
   }
   .number-panda {
-    margin: 55px 15px 48px 0;
+    margin: 56px 15px 48px 0;
   }
   .choose-amount {
     padding: 0 16px;
   }
   .label-amount {
     width: 101px;
+    margin: 37px -10px 25px 11px;
+  }
+  .input-another-amount {
+    width: 250px;
+  }
+  .feed-input-label {
+    margin: 0 34px 0 11px;
   }
   .input-label {
     margin: 0 14px;
@@ -582,6 +592,9 @@ footer .nav-list {
   }
   footer {
     padding: 40px 30px 50px;
+  }
+  footer .nav-list {
+    margin: 0 0 0 13%;
   }
   footer.nav-link {
     margin: 0 20px;

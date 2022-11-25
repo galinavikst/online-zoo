@@ -1088,6 +1088,13 @@ footer .nav-list {
   .input-border {
     display: none;
   }
+  input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    height: 7px;
+    width: 25%;
+    border-radius: 50px;
+    background: var(--accent-color);
+  }
   .leave-feedback-bnt {
     margin: 0 auto;
     width: 240px;
