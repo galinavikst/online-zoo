@@ -472,6 +472,9 @@ footer {
 footer .nav-list {
   margin: 0 0 0 11%;
 }
+.footer-logo-320 {
+  display: none;
+}
 .about-link {
   cursor: default;
 }
@@ -736,5 +739,59 @@ footer .nav-list {
   }
   .social-list li {
     margin-top: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    width: 320px;
+  }
+
+  footer {
+    padding: 18px 10px;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .footer-logo-320 {
+    display: block;
+  }
+  .footer-logo-320 a {
+    text-decoration: none;
+  }
+  .logo320 {
+    margin: 0;
+    color: var(--white-addition-color);
+    text-align: center;
+    line-height: 120%;
+    font-size: 19px;
+  }
+  .logo-bamboo320 {
+    display: block;
+    position: absolute;
+    left: 53%;
+  }
+  .social-list {
+    display: flex;
+    right: 10%;
+    margin-bottom: 213px;
+  }
+  .icon-bg {
+    margin-right: 30px;
+  }
+  .footer-donate-link {
+    margin: 91px 0 28px;
+  }
+  .footer-bottom {
+    flex-direction: column-reverse;
+  }
+  .copy-rights {
+    margin-bottom: 11%;
+  }
+  .copy-rights p {
+    font-size: 15px;
+    line-height: 120%;
+  }
+  footer .nav-link {
+    margin: 0 16px 0 11px;
   }
 }

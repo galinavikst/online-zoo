@@ -199,7 +199,6 @@ input[type="checkbox"]:checked + .nav-list {
 }
 .hero-button {
   font-family: inherit;
-  display: block;
   margin: 60px auto 100px;
   padding: 15px;
   font-weight: 500;
@@ -214,6 +213,9 @@ input[type="checkbox"]:checked + .nav-list {
   color: var(--white-addition-color);
   background: var(--orange-gradient);
 }
+.main {
+  display: block;
+}
 .hero-button:hover,
 .hero-button:focus {
   background: var(--hover-btn-color);
@@ -224,6 +226,9 @@ input[type="checkbox"]:checked + .nav-list {
   padding: 140px 220px;
   display: flex;
   background: url("../../assets/icons/flower_foto1.png") no-repeat 100% 10px;
+}
+.mob {
+  display: none;
 }
 .img-1000 {
   display: none;
@@ -633,6 +638,9 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+.footer-logo-320 {
+  display: none;
+}
 .subscribe-form label {
   display: block;
   font-size: 24px;
@@ -785,7 +793,7 @@ footer .nav-list {
     font-size: 85px;
     line-height: 75%;
   }
-  .hero-button {
+  .main {
     margin: 45px 100px 47px;
   }
   .backstage {
@@ -953,7 +961,7 @@ footer .nav-list {
     margin: 0;
     letter-spacing: 1px;
   }
-  .hero-button {
+  .main {
     position: absolute;
     top: 75%;
     right: 74%;
@@ -1127,5 +1135,248 @@ footer .nav-list {
   }
   .social-list li {
     margin-top: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    width: 320px;
+  }
+  header {
+    padding: 0 9px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-logo {
+    height: 30px;
+    padding: 2px;
+    margin: 0;
+    border: none;
+    font-size: 12.2899px;
+    line-height: 120%;
+  }
+  .header-logo span {
+    top: -3px;
+  }
+  .logo-bamboo {
+    height: 13px;
+    left: 1px;
+  }
+  .hamb-label {
+    display: block;
+  }
+  nav {
+    margin-top: 33px;
+    display: none;
+  }
+  .nav-list {
+    margin: 0;
+  }
+  .nav-item {
+    margin: 14px 0;
+  }
+  .nav-item a {
+    margin: 0;
+  }
+  .designed-by-link {
+    margin: 0;
+  }
+  .hero {
+    height: 187px;
+  }
+  .main {
+    display: none;
+  }
+  .elipse {
+    width: 119px;
+    height: 119px;
+    margin-top: 23px;
+    margin-left: 0px;
+  }
+  .hero-info {
+    bottom: 41%;
+    right: -4%;
+  }
+  .hero-info h2 {
+    font-size: 28px;
+  }
+  .backstage {
+    display: block;
+    padding: 21px 24px 33px 12px;
+    background: url(../../assets/icons/flower_foto1.png) no-repeat 100% 31px;
+    background-position-x: 125%;
+    background-size: 92px 238px;
+  }
+  .hero-button {
+    margin: 0 auto;
+  }
+  .mob {
+    display: block;
+  }
+  .backstage-info h2 {
+    font-size: 24px;
+    margin: 41px 0 10px;
+  }
+  .backstage-info p {
+    margin: 0;
+    line-height: 135%;
+  }
+  .backstage h3 {
+    margin: 19px 0 10px;
+    font-weight: 400;
+  }
+  .animals-card {
+    padding-bottom: 61px;
+    background-image: url(../../assets/icons/palm_foto1000.png),
+      url(../../assets/icons/strelitzia\ 1.png);
+    background-size: 69px, 83px;
+    background-position: bottom left -11px, bottom right -17px;
+  }
+  .scroll-btn {
+    display: none;
+  }
+  .card-list {
+    display: block;
+  }
+  .card-item {
+    margin-bottom: 17px;
+  }
+  .choose-favorite-btn {
+    margin: 7px auto 0;
+  }
+  .donate-instruction {
+    display: block;
+  }
+
+  .block-pick-and-feed {
+    padding: 22px 10px 19px;
+  }
+  .pick-and-feed {
+    padding-bottom: 46px;
+  }
+  .pick-and-feed h2 {
+    padding-top: 18px;
+    font-size: 24px;
+  }
+  .entering-text {
+    text-align: center;
+    font-size: 18px;
+    padding: 0;
+    margin: 12px 0;
+  }
+  .pick-and-feed h3 {
+    margin: 21px 0 19px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .description-icon {
+    display: none;
+  }
+  .covid-info,
+  .donate-info {
+    display: none;
+  }
+  .block-icon {
+    margin: 0 auto;
+  }
+  .clone-description {
+    margin: 8px 65px 38px;
+    line-height: 130%;
+  }
+  .green-arrow1 {
+    transform: rotate(82deg);
+    left: 69%;
+    top: 27%;
+  }
+  .green-arrow2 {
+    transform: rotate(82deg);
+    left: 69%;
+    top: 61%;
+  }
+  .testimonials {
+    position: relative;
+    padding: 30px 10px 60px;
+    background: none;
+  }
+  .testimonials h2 {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .testimonial-list {
+    margin: 19px 0 30px;
+  }
+  .testimonial-item {
+    padding: 10px 13px 26px;
+  }
+  .testimonial-person img {
+    margin-right: 5px;
+  }
+  .leav-container {
+    left: 79%;
+    position: absolute;
+    overflow: hidden;
+    width: 66px;
+  }
+  .bg-leav {
+    position: relative;
+    padding: 40px;
+    background-image: url(../../assets/icons/leav_foto.svg);
+    transform: rotate(-20deg);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    transform: rotate(-15deg);
+    left: -9%;
+    background-position-x: 98%;
+  }
+  footer {
+    padding: 18px 10px;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .footer-logo-320 {
+    display: block;
+  }
+  .footer-logo-320 a {
+    text-decoration: none;
+  }
+  .logo320 {
+    margin: 0;
+    color: var(--white-addition-color);
+    text-align: center;
+    line-height: 120%;
+    font-size: 19px;
+  }
+  .logo-bamboo320 {
+    display: block;
+    position: absolute;
+    left: 53%;
+  }
+  .social-list {
+    display: flex;
+    right: 10%;
+    margin-bottom: 213px;
+  }
+  .icon-bg {
+    margin-right: 30px;
+  }
+  .footer-donate-link {
+    margin: 91px 0 28px;
+  }
+  .footer-bottom {
+    flex-direction: column-reverse;
+  }
+  .copy-rights {
+    margin-bottom: 11%;
+  }
+  .copy-rights p {
+    font-size: 15px;
+    line-height: 120%;
+  }
+  footer .nav-link {
+    margin: 0 16px 0 11px;
   }
 }
