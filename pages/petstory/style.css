@@ -79,6 +79,9 @@ nav {
 .header-box {
   display: flex;
 }
+.header-box a {
+  text-decoration: none;
+}
 .nav-list {
   display: flex;
   list-style: none;
