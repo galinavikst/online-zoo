@@ -452,6 +452,9 @@ input[type="checkbox"]:checked + .nav-list {
   text-align: center;
   color: var(--main-text-color);
 }
+.clone-description {
+  display: none;
+}
 .donate-instruction {
   display: flex;
   justify-content: center;
@@ -889,6 +892,9 @@ footer .nav-list {
   input[type="range"] {
     width: 390px;
   }
+  input[type="range"]::-webkit-slider-thumb {
+    width: 20%;
+  }
   .leave-feedback-bnt {
     margin: 52px 0 0;
   }
@@ -1189,7 +1195,11 @@ footer .nav-list {
   .hero {
     height: 187px;
   }
-  .main {
+  .main,
+  .scroll-btn,
+  .covid-info,
+  .donate-info,
+  .description-icon {
     display: none;
   }
   .elipse {
@@ -1215,7 +1225,9 @@ footer .nav-list {
   .hero-button {
     margin: 0 auto;
   }
-  .mob {
+  .mob,
+  .card-list,
+  .donate-instruction {
     display: block;
   }
   .backstage-info h2 {
@@ -1237,22 +1249,12 @@ footer .nav-list {
     background-size: 69px, 83px;
     background-position: bottom left -11px, bottom right -17px;
   }
-  .scroll-btn {
-    display: none;
-  }
-  .card-list {
-    display: block;
-  }
   .card-item {
     margin-bottom: 17px;
   }
   .choose-favorite-btn {
     margin: 7px auto 0;
   }
-  .donate-instruction {
-    display: block;
-  }
-
   .block-pick-and-feed {
     padding: 22px 10px 19px;
   }
@@ -1275,17 +1277,11 @@ footer .nav-list {
     font-size: 24px;
     line-height: 120%;
   }
-  .description-icon {
-    display: none;
-  }
-  .covid-info,
-  .donate-info {
-    display: none;
-  }
   .block-icon {
     margin: 0 auto;
   }
   .clone-description {
+    display: block;
     margin: 8px 65px 38px;
     line-height: 130%;
   }

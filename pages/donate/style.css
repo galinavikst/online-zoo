@@ -811,8 +811,22 @@ footer .nav-list {
     margin: 0 0 7px 0;
   }
   .radio-input[name="amount"] {
+    top: 6px;
     width: 5px;
     height: 5px;
+  }
+  .radio-input[name="amount"]:checked,
+  .radio-input[name="amount"]:hover {
+    outline: 1px solid var(--accent-color);
+    outline-offset: 6px;
+  }
+  .radio-input[name="amount"]::before {
+    top: -3px;
+    left: -3px;
+    border: 1px solid var(--accent-color);
+    width: 9px;
+    padding-bottom: 8px;
+    height: 1px;
   }
   .input-label {
     margin: 0px 18px;
@@ -820,7 +834,7 @@ footer .nav-list {
   }
   .progress-bar {
     padding: 0 20px;
-    height: 14px;
+    height: 13px;
   }
   .label-amount {
     font-size: 13px;
@@ -836,7 +850,7 @@ footer .nav-list {
   }
 
   footer {
-    padding: 18px 10px;
+    padding: 20px 10px;
   }
   .footer-logo {
     display: none;
@@ -868,7 +882,7 @@ footer .nav-list {
     margin-right: 30px;
   }
   .footer-donate-link {
-    margin: 91px 0 28px;
+    margin: 88px 0 31px;
   }
   .footer-bottom {
     flex-direction: column-reverse;
