@@ -212,6 +212,13 @@ input[type="checkbox"]:checked + .nav-list {
   justify-content: center;
   align-items: center;
 }
+.panda-icon img {
+  width: 284px;
+  height: 246px;
+}
+.x-icon img {
+  width: 14px;
+}
 .number .number4 {
   margin: 77px 0 0;
   font-weight: 500;
@@ -744,6 +751,85 @@ footer .nav-list {
 @media screen and (max-width: 320px) {
   body {
     width: 320px;
+  }
+  header {
+    padding: 0px 9px;
+  }
+  .hero {
+    height: 187px;
+    background-size: 240%;
+    background-position-x: 35%;
+  }
+  .donation {
+    padding: 30px 10px 22px;
+  }
+  .officially-opened {
+    padding: 0;
+  }
+  .donation h2 {
+    font-size: 24px;
+    line-height: 120%;
+    margin: 30px 0;
+  }
+  .pick-and-feed {
+    padding: 19px 0px 19px;
+  }
+  .pick-and-feed h3 {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .pick-and-feed p {
+    font-size: 16px;
+    line-height: 140%;
+    margin: 9px 0;
+  }
+  .panda-icon img {
+    width: 162px;
+    height: 138px;
+  }
+  .number .number4 {
+    font-size: 40px;
+    margin: 37px 0 0;
+  }
+  .number .text {
+    font-size: 9px;
+  }
+  .number-panda {
+    margin: 0;
+    justify-content: space-between;
+  }
+  .x-icon {
+    margin: 7px 34px 0 5px;
+  }
+  .x-icon img {
+    width: 8px;
+  }
+  .donation .amount-word {
+    margin: 0 0 7px 0;
+  }
+  .radio-input[name="amount"] {
+    width: 5px;
+    height: 5px;
+  }
+  .input-label {
+    margin: 0px 18px;
+    bottom: 15px;
+  }
+  .progress-bar {
+    padding: 0 20px;
+    height: 14px;
+  }
+  .label-amount {
+    font-size: 13px;
+    width: 27px;
+    margin: 21px -9px 10px 11px;
+  }
+  .form-radio-input {
+    margin: 23px 0 26px;
+  }
+  .form-feed-friend .share-text {
+    margin: 30px 0 0;
+    white-space: nowrap;
   }
 
   footer {
