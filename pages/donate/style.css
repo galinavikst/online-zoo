@@ -609,11 +609,14 @@ footer .nav-list {
   footer .nav-list {
     margin: 0 0 0 13%;
   }
-  footer.nav-link {
-    margin: 0 20px;
+  footer .nav-link {
+    margin: 0 25px;
   }
   .subscribe-form {
-    margin-right: 25px;
+    margin-right: 30px;
+  }
+  .footer-submit-btn {
+    margin-left: 5px;
   }
   .footer-donate-link {
     margin: 68px 0 32px;
@@ -848,7 +851,6 @@ footer .nav-list {
     margin: 30px 0 0;
     white-space: nowrap;
   }
-
   footer {
     padding: 20px 10px;
   }

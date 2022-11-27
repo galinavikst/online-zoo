@@ -729,7 +729,6 @@ footer .nav-list {
   text-decoration: none;
   color: var(--white-addition-color);
 }
-
 .social-list a:active,
 .social-list a:focus {
   color: var(--activ-addition-color);
@@ -910,12 +909,12 @@ footer .nav-list {
     width: 640px;
   }
   header {
+    display: flex;
+    justify-content: space-between;
     padding: 0 16px;
     position: sticky;
     top: 0;
     z-index: 1;
-    display: flex;
-    justify-content: space-between;
   }
   .header-logo {
     height: 30px;
