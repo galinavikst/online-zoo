@@ -773,7 +773,7 @@ footer .nav-list {
     padding: 0 30px;
   }
   .nav-link {
-    margin: 0 25px;
+    margin: 0 15px 0 33px;
   }
   .designed-by-link {
     margin: 0;
@@ -797,6 +797,7 @@ footer .nav-list {
     font-weight: 700;
     font-size: 85px;
     line-height: 75%;
+    letter-spacing: 1px;
   }
   .main {
     margin: 45px 100px 47px;
@@ -900,8 +901,14 @@ footer .nav-list {
   footer {
     padding: 40px 30px 50px;
   }
+  footer .nav-link {
+    margin: 0 30px 0 17px;
+  }
   .subscribe-form {
-    margin-right: 25px;
+    margin-right: 32px;
+  }
+  .footer-submit-btn {
+    margin-left: 5px;
   }
 }
 @media screen and (max-width: 640px) {
@@ -1127,7 +1134,7 @@ footer .nav-list {
     margin: 29px 0 69px;
     width: 296px;
   }
-  .nav-link {
+  footer .nav-link {
     margin: 0 37px 0 0px;
   }
   .subscribe-form {
@@ -1205,7 +1212,7 @@ footer .nav-list {
     width: 119px;
     height: 119px;
     margin-top: 23px;
-    margin-left: 0px;
+    margin-left: 3px;
   }
   .hero-info {
     bottom: 41%;
