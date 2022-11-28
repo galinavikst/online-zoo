@@ -67,12 +67,20 @@ body {
 
 /* .......header .....*/
 header {
-  display: flex;
   padding: 0 220px;
   background-color: var(--black-bg-color);
 }
 nav {
-  margin: auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header-box {
+  display: flex;
+}
+.header-box a {
+  text-decoration: none;
 }
 .nav-list {
   display: flex;
@@ -80,16 +88,17 @@ nav {
   padding: 0;
 }
 .header-logo {
-  margin: 15px 30px;
+  padding: 4px;
+  height: 45px;
+  margin: 14px 30px 14px 0;
   vertical-align: middle;
   color: var(--white-addition-color);
   border: 1.18841px solid var(--white-addition-color);
   border-radius: 2px;
   font-size: 19.0145px;
-  line-height: 120%;
+  line-height: 110%;
   font-style: normal;
   font-weight: 400;
-  padding: 4px;
   text-align: center;
 }
 .logo-bamboo {
@@ -108,13 +117,47 @@ nav {
   text-decoration: none;
 }
 .designed-by-link {
-  position: relative;
-  left: 19em;
+  margin: 0;
 }
 .nav-link:hover,
 .nav-link:focus,
 .active {
   color: var(--accent-color);
+}
+/* --- header hamb-menu... */
+input[type="checkbox"] {
+  display: none;
+}
+.hamb-label {
+  padding-top: 11px;
+  cursor: pointer;
+  display: none;
+}
+.hamb-line {
+  display: block;
+  transition: 200ms ease;
+  margin: 1px;
+  width: 18px;
+  height: 2px;
+  background: var(--gray-input-color-bg);
+  border-radius: 2px;
+}
+input[type="checkbox"]:checked ~ .hamb-label span:nth-child(2) {
+  opacity: 0;
+}
+input[type="checkbox"]:checked ~ .hamb-label span:nth-child(1) {
+  transform: rotate(38deg);
+}
+input[type="checkbox"]:checked ~ .hamb-label span:nth-child(3) {
+  transform: rotate(-43deg) translate(4px, -5px);
+}
+input[type="checkbox"]:checked ~ .header-box nav:nth-child(4) {
+  display: block;
+}
+input[type="checkbox"]:checked + .header-box,
+input[type="checkbox"]:checked + #header-nav,
+input[type="checkbox"]:checked + .nav-list {
+  display: block;
 }
 /* ....end block... */
 /* ....hero..... */
@@ -127,6 +170,7 @@ nav {
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  overflow: hidden;
 }
 .elipse {
   background: var(--orange-gradient);
@@ -137,12 +181,14 @@ nav {
 }
 .hero-info {
   position: relative;
-  bottom: 42%;
+  bottom: 40%;
   right: 10%;
 }
 .hero-info h2 {
+  margin: 0;
+  margin-top: 58px;
   font-weight: 700;
-  font-size: 106.496px;
+  font-size: 106px;
   line-height: 75%;
   letter-spacing: 2px;
 
@@ -151,13 +197,12 @@ nav {
 
   color: var(--white-addition-color);
 }
-.hearo-accent {
+.hero-accent {
   color: var(--secondary-accent-color);
 }
 .hero-button {
   font-family: inherit;
-  display: block;
-  margin: 40px auto;
+  margin: 60px auto 100px;
   padding: 15px;
   font-weight: 500;
   font-size: 16px;
@@ -171,6 +216,9 @@ nav {
   color: var(--white-addition-color);
   background: var(--orange-gradient);
 }
+.main {
+  display: block;
+}
 .hero-button:hover,
 .hero-button:focus {
   background: var(--hover-btn-color);
@@ -178,9 +226,15 @@ nav {
 /* .......end hero..... */
 /* ........backstage section....... */
 .backstage {
-  padding: 180px 220px;
+  padding: 140px 220px;
   display: flex;
   background: url("../../assets/icons/flower_foto1.png") no-repeat 100% 10px;
+}
+.mob {
+  display: none;
+}
+.img-1000 {
+  display: none;
 }
 .backstage-info {
   padding-left: 85px;
@@ -202,7 +256,7 @@ nav {
 .backstage h3 {
   font-size: 24px;
   line-height: 120%;
-  margin: 55px 0 35px;
+  margin: 54px 0 34px;
   color: #333b41;
 }
 .backstage-info img {
@@ -218,6 +272,9 @@ nav {
     url("../../assets/icons/strelitzia 1.png");
   background-repeat: no-repeat;
   background-position: bottom left, bottom right;
+}
+.animal-img {
+  width: 365px;
 }
 .scroll-card-bar {
   display: flex;
@@ -241,7 +298,6 @@ nav {
 .card-item {
   border: 1px solid var(--accent-color);
   border-radius: 5px;
-  width: 365px;
 }
 .card-item > img {
   border-radius: 5px 5px 0 0;
@@ -339,6 +395,7 @@ nav {
   background: var(--hover-btn-color);
   cursor: pointer;
 }
+.hero-button:active,
 .scroll-btn:active,
 .choose-favorite-btn:active {
   background: var(--activ-addition-color);
@@ -347,11 +404,10 @@ nav {
 /* ............pick-and-feed....... */
 .block-pick-and-feed {
   background: var(--orange-grad);
-  padding: 70px 220px 50px;
+  padding: 70px 220px 100px;
 }
 .pick-and-feed {
-  width: 1160px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   border: none;
   border-radius: 20px;
 
@@ -395,9 +451,17 @@ nav {
   text-align: center;
   color: var(--main-text-color);
 }
+.clone-description {
+  display: none;
+}
 .donate-instruction {
   display: flex;
   justify-content: center;
+}
+.green-arrow1,
+.green-arrow2 {
+  width: 63px;
+  display: none;
 }
 .block-icon {
   background: var(--white-addition-color);
@@ -416,7 +480,7 @@ nav {
 .description-icon {
   display: flex;
   justify-content: center;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 .description-icon p {
   font-size: 16px;
@@ -579,6 +643,9 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+.footer-logo-320 {
+  display: none;
+}
 .subscribe-form label {
   display: block;
   font-size: 24px;
@@ -628,7 +695,7 @@ footer {
   width: 300px;
   padding: 15px 0;
   border-radius: 5px;
-  margin: 75px 0 45px;
+  margin: 68px 0 32px;
 
   background: var(--orange-gradient);
   color: var(--white-addition-color);
@@ -661,7 +728,6 @@ footer .nav-list {
   text-decoration: none;
   color: var(--white-addition-color);
 }
-
 .social-list a:active,
 .social-list a:focus {
   color: var(--activ-addition-color);
@@ -698,3 +764,623 @@ footer .nav-list {
   margin-bottom: 10px;
 }
 /* ...........end block........... */
+@media screen and (max-width: 1000px) {
+  body {
+    width: 1000px;
+  }
+  header {
+    padding: 0 30px;
+  }
+  .nav-link {
+    margin: 0 15px 0 33px;
+  }
+  .designed-by-link {
+    margin: 0;
+  }
+  .hero {
+    height: 501px;
+    background-size: cover;
+  }
+  .elipse {
+    width: 367px;
+    height: 367px;
+    margin-top: -14px;
+    margin-left: -44px;
+  }
+  .hero-info {
+    position: relative;
+    bottom: 43%;
+    right: 7%;
+  }
+  .hero-info h2 {
+    font-weight: 700;
+    font-size: 85px;
+    line-height: 75%;
+    letter-spacing: 1px;
+  }
+  .main {
+    margin: 45px 100px 47px;
+  }
+  .backstage {
+    padding: 109px 30px 120px;
+    background: none;
+  }
+  .img-1000 {
+    display: block;
+  }
+  .img-1600 {
+    display: none;
+  }
+  .backstage-info {
+    position: relative;
+    top: -9px;
+    padding-left: 31px;
+  }
+  .backstage h2 {
+    margin: 0 0 23px;
+  }
+  .backstage p {
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .animals-card {
+    padding-bottom: 136px;
+    background-image: url("../../assets/icons/palm_foto1000.png"),
+      url("../../assets/icons/strelitzia 1.png");
+    background-size: 190px, 241px;
+  }
+  .animal-img {
+    width: 295px;
+  }
+  .card-list {
+    grid-row-gap: 85px;
+  }
+  .scroll-btn {
+    width: 62px;
+  }
+  .scroll-btn.left {
+    position: relative;
+    left: 31em;
+  }
+  .scroll-btn.right {
+    position: relative;
+    right: 31em;
+  }
+  .block-pick-and-feed {
+    padding: 30px 30px 50px;
+  }
+  .pick-and-feed {
+    padding-bottom: 50px;
+  }
+  .pick-and-feed h2 {
+    padding-top: 30px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+  }
+  .entering-text {
+    margin: 20px 0;
+    padding-left: 49px;
+  }
+  .covid-info {
+    margin: 10px 0;
+    padding: 0 49px;
+  }
+  .donate-info {
+    margin: 0;
+    padding: 0 49px;
+  }
+  .pick-and-feed h3 {
+    margin: 40px 0;
+  }
+  .testimonials {
+    padding: 100px 30px 140px;
+    background-position: right 115%;
+    background-size: 192px;
+  }
+  .testimonial-list {
+    margin: 30px 0 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .last {
+    display: none;
+  }
+  .input-border {
+    width: 392px;
+  }
+  input[type="range"] {
+    width: 390px;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    width: 20%;
+  }
+  .leave-feedback-bnt {
+    margin: 52px 0 0;
+  }
+  footer {
+    padding: 40px 30px 50px;
+  }
+  footer .nav-link {
+    margin: 0 30px 0 17px;
+  }
+  .subscribe-form {
+    margin-right: 32px;
+  }
+  .footer-submit-btn {
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width: 640px) {
+  body {
+    width: 640px;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .header-logo {
+    height: 30px;
+    padding: 2px;
+    margin: 0;
+    border: none;
+    font-size: 12.2899px;
+    line-height: 120%;
+  }
+  .header-logo span {
+    top: -3px;
+  }
+  .logo-bamboo {
+    height: 13px;
+    left: 1px;
+  }
+  .hamb-label {
+    display: block;
+  }
+  nav {
+    margin-top: 33px;
+    display: none;
+  }
+  .nav-list {
+    margin: 0;
+  }
+  .nav-item {
+    margin: 14px 0;
+  }
+  .nav-item a {
+    margin: 0;
+  }
+  .designed-by-link {
+    margin: 0;
+  }
+  .hero {
+    height: 339px;
+    background-position: center;
+  }
+  .elipse {
+    width: 237px;
+    height: 237px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .hero-info {
+    bottom: 44%;
+    right: -5%;
+  }
+  .hero-info h2 {
+    font-size: 54px;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  .main {
+    position: absolute;
+    top: 75%;
+    right: 74%;
+  }
+  .backstage {
+    padding: 69px 130px 58px 20px;
+    background: url("../../assets/icons/flower_foto1.png") no-repeat 100% 10px;
+    background-size: 128px 455px;
+  }
+  .img-1000 {
+    display: none;
+  }
+  .backstage-info {
+    padding: 0;
+  }
+  .backstage h3 {
+    margin: 30px 0 20px;
+  }
+  .animals-card {
+    padding-bottom: 100px;
+    background-image: url(../../assets/icons/palm_foto.png),
+      url(../../assets/icons/strelitzia\ 1.png);
+    background-size: 130px, 179px;
+  }
+  .card-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 92px;
+  }
+  .animal-img {
+    width: 284px;
+  }
+  .first-card,
+  .last-card {
+    display: none;
+  }
+  .card-item h2 {
+    font-size: 13px;
+  }
+  .card-bottom {
+    padding: 3px 11px 1px;
+  }
+  .description p {
+    font-size: 12px;
+  }
+  .scroll-btn.left {
+    left: 23em;
+  }
+  .scroll-btn.right {
+    right: 23em;
+  }
+  .choose-favorite-btn {
+    width: 300px;
+    margin: 59px auto 0;
+  }
+  .block-pick-and-feed {
+    padding: 22px 0 19px;
+  }
+  .pick-and-feed {
+    padding-bottom: 60px;
+  }
+  .pick-and-feed h2 {
+    padding-top: 8px;
+    font-size: 42px;
+  }
+  .entering-text {
+    padding-left: 20px;
+    font-size: 22px;
+  }
+  .covid-info,
+  .donate-info {
+    padding: 0 19px;
+  }
+  .pick-and-feed h3 {
+    margin: 32px 0 20px;
+  }
+  .arrow {
+    display: none;
+  }
+  .donate-instruction {
+    position: relative;
+    justify-content: space-around;
+  }
+  .green-arrow1 {
+    display: block;
+    position: absolute;
+    left: 24%;
+    top: -10%;
+    width: 86px;
+  }
+  .green-arrow2 {
+    display: block;
+    position: absolute;
+    left: 57%;
+    top: -10%;
+    width: 87px;
+  }
+  .description-icon {
+    margin-bottom: 30px;
+  }
+  .description-icon p {
+    margin: 30px 20px;
+    justify-content: space-around;
+    margin-bottom: 9px;
+  }
+  .feed-friend-link {
+    width: 300px;
+  }
+  .testimonials {
+    padding: 60px 21px 80px;
+    display: block;
+    background-position: right 115%;
+    background-size: 120px;
+  }
+  .testimonials h2 {
+    font-weight: 400;
+  }
+  .border {
+    overflow: hidden;
+    height: 109px;
+    margin: 10px 0;
+  }
+  .testimonial-list {
+    display: block;
+    margin: 30px 0 41px;
+  }
+  .testimonial-item {
+    height: 73px;
+  }
+  .hide-text {
+    height: 46px;
+  }
+  .input-border {
+    display: none;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    height: 7px;
+    width: 25%;
+    border-radius: 50px;
+    background: var(--accent-color);
+  }
+  .leave-feedback-bnt {
+    margin: 0 auto;
+    width: 240px;
+  }
+  /* ........footer....... */
+  footer {
+    position: relative;
+    padding: 12px 21px 11px;
+  }
+  footer .nav-list {
+    margin: 0;
+  }
+  .footer-donate-link {
+    margin: 29px 0 69px;
+    width: 296px;
+  }
+  footer .nav-link {
+    margin: 0 37px 0 0px;
+  }
+  .subscribe-form {
+    display: none;
+  }
+  .social-list p {
+    display: none;
+  }
+  .social-list {
+    position: absolute;
+    right: 1%;
+    margin-bottom: 94px;
+  }
+  .social-list li {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    width: 320px;
+  }
+  header {
+    padding: 0 9px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-logo {
+    height: 30px;
+    padding: 2px;
+    margin: 0;
+    border: none;
+    font-size: 12.2899px;
+    line-height: 120%;
+  }
+  .header-logo span {
+    top: -3px;
+  }
+  .logo-bamboo {
+    height: 13px;
+    left: 1px;
+  }
+  .hamb-label {
+    display: block;
+  }
+  nav {
+    margin-top: 33px;
+    display: none;
+  }
+  .nav-list {
+    margin: 0;
+  }
+  .nav-item {
+    margin: 14px 0;
+  }
+  .nav-item a {
+    margin: 0;
+  }
+  .designed-by-link {
+    margin: 0;
+  }
+  .hero {
+    height: 187px;
+  }
+  .main,
+  .scroll-btn,
+  .covid-info,
+  .donate-info,
+  .description-icon {
+    display: none;
+  }
+  .elipse {
+    width: 119px;
+    height: 119px;
+    margin-top: 23px;
+    margin-left: 3px;
+  }
+  .hero-info {
+    bottom: 41%;
+    right: -4%;
+  }
+  .hero-info h2 {
+    font-size: 28px;
+  }
+  .backstage {
+    display: block;
+    padding: 21px 24px 33px 12px;
+    background: url(../../assets/icons/flower_foto1.png) no-repeat 100% 31px;
+    background-position-x: 125%;
+    background-size: 92px 238px;
+  }
+  .hero-button {
+    margin: 0 auto;
+  }
+  .mob,
+  .card-list,
+  .donate-instruction {
+    display: block;
+  }
+  .backstage-info h2 {
+    font-size: 24px;
+    margin: 41px 0 10px;
+  }
+  .backstage-info p {
+    margin: 0;
+    line-height: 135%;
+  }
+  .backstage h3 {
+    margin: 19px 0 10px;
+    font-weight: 400;
+  }
+  .animals-card {
+    padding-bottom: 61px;
+    background-image: url(../../assets/icons/palm_foto1000.png),
+      url(../../assets/icons/strelitzia\ 1.png);
+    background-size: 69px, 83px;
+    background-position: bottom left -11px, bottom right -17px;
+  }
+  .card-item {
+    margin-bottom: 17px;
+  }
+  .choose-favorite-btn {
+    margin: 7px auto 0;
+  }
+  .block-pick-and-feed {
+    padding: 22px 10px 19px;
+  }
+  .pick-and-feed {
+    padding-bottom: 46px;
+  }
+  .pick-and-feed h2 {
+    padding-top: 18px;
+    font-size: 24px;
+  }
+  .entering-text {
+    text-align: center;
+    font-size: 18px;
+    padding: 0;
+    margin: 12px 0;
+  }
+  .pick-and-feed h3 {
+    margin: 21px 0 19px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .block-icon {
+    margin: 0 auto;
+  }
+  .clone-description {
+    display: block;
+    margin: 8px 65px 38px;
+    line-height: 130%;
+  }
+  .green-arrow1 {
+    transform: rotate(82deg);
+    left: 69%;
+    top: 27%;
+  }
+  .green-arrow2 {
+    transform: rotate(82deg);
+    left: 69%;
+    top: 61%;
+  }
+  .testimonials {
+    position: relative;
+    padding: 30px 10px 60px;
+    background: none;
+  }
+  .testimonials h2 {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .testimonial-list {
+    margin: 19px 0 30px;
+  }
+  .testimonial-item {
+    padding: 10px 13px 26px;
+  }
+  .testimonial-person img {
+    margin-right: 5px;
+  }
+  .leav-container {
+    left: 79%;
+    position: absolute;
+    overflow: hidden;
+    width: 66px;
+  }
+  .bg-leav {
+    position: relative;
+    padding: 40px;
+    background-image: url(../../assets/icons/leav_foto.svg);
+    transform: rotate(-20deg);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    transform: rotate(-15deg);
+    left: -9%;
+    background-position-x: 98%;
+  }
+  footer {
+    padding: 18px 10px;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .footer-logo-320 {
+    display: block;
+  }
+  .footer-logo-320 a {
+    text-decoration: none;
+  }
+  .logo320 {
+    margin: 0;
+    color: var(--white-addition-color);
+    text-align: center;
+    line-height: 120%;
+    font-size: 19px;
+  }
+  .logo-bamboo320 {
+    display: block;
+    position: absolute;
+    left: 53%;
+  }
+  .social-list {
+    display: flex;
+    right: 10%;
+    margin-bottom: 213px;
+  }
+  .icon-bg {
+    margin-right: 30px;
+  }
+  .footer-donate-link {
+    margin: 91px 0 28px;
+  }
+  .footer-bottom {
+    flex-direction: column-reverse;
+  }
+  .copy-rights {
+    margin-bottom: 11%;
+  }
+  .copy-rights p {
+    font-size: 15px;
+    line-height: 120%;
+  }
+  footer .nav-link {
+    margin: 0 16px 0 11px;
+  }
+}
