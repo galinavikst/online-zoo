@@ -298,6 +298,7 @@ input[type="checkbox"]:checked + .nav-list {
 .card-item {
   border: 1px solid var(--accent-color);
   border-radius: 5px;
+  overflow: hidden;
 }
 .card-item > img {
   border-radius: 5px 5px 0 0;
@@ -307,26 +308,31 @@ input[type="checkbox"]:checked + .nav-list {
 }
 .card-item > img:hover {
   transform: scale(1.1, 1.1);
-  border-radius: 5px;
+  border-radius: 24px;
 }
 .card-item > img:hover + .card-bottom {
   position: relative;
-  transform: scale(1.1, 1.1);
   border-radius: 0 0 5px 5px;
   animation: card 0.2s linear 0s 1 normal forwards;
   animation: name duration timing-function delay iteration-count direction
     fill-mode;
 }
+.card-item > img:hover + .card-bottom > .description > h2 {
+  color: var(--white-addition-color);
+}
+.card-item > img:hover + .card-bottom > .description > p {
+  color: var(--white-addition-color);
+}
+.card-item > img:hover + .card-bottom > .description + .card-icon {
+  display: none;
+}
 @keyframes card {
   from {
     top: 0;
-    background-color: var(--gray-ligth-bg-color);
-    color: var(--white-addition-color);
   }
   to {
-    top: -11%;
-    background-color: var(--gray-ligth-bg-color);
-    color: var(--white-addition-color);
+    top: -45px;
+    background-color: #00000059;
   }
 }
 .card-bottom {
