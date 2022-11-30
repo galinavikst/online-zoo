@@ -61,6 +61,7 @@
         </label>
       </header>
       <main>
+        <div class="overlay"></div>
         <div class="hero">
           <div></div>
           <div>
@@ -112,11 +113,13 @@
 
         <section class="animals-card">
           <div class="scroll-card-bar">
-            <div><button class="scroll-btn left">&larr;</button></div>
+            <div class="card-arrows">
+              <button class="scroll-btn left">&larr;</button>
+            </div>
 
             <div class="cards">
               <ul class="card-list">
-                <li class="card-item first-card">
+                <li id="card1" class="card-item">
                   <img
                     class="animal-img"
                     src="./assets/images/giant-pandas.jpg"
@@ -135,8 +138,7 @@
                     />
                   </div>
                 </li>
-
-                <li class="card-item">
+                <li id="card2" class="card-item">
                   <img
                     class="animal-img"
                     src="./assets/images/eagles.jpg"
@@ -155,7 +157,7 @@
                     />
                   </div>
                 </li>
-                <li class="card-item">
+                <li id="card3" class="card-item">
                   <img
                     class="animal-img"
                     src="./assets/images/Gorillas.jpg"
@@ -174,7 +176,7 @@
                     />
                   </div>
                 </li>
-                <li class="card-item">
+                <li id="card4" class="card-item">
                   <img
                     class="animal-img"
                     src="./assets/images/two-toed-sloth.jpg"
@@ -193,7 +195,7 @@
                     />
                   </div>
                 </li>
-                <li class="card-item">
+                <li id="card5" class="card-item">
                   <img
                     class="animal-img"
                     src="./assets/images/cheetahs.jpg"
@@ -212,7 +214,26 @@
                     />
                   </div>
                 </li>
-                <li class="card-item last-card">
+                <li id="card6" class="card-item">
+                  <img
+                    class="animal-img"
+                    src="./assets/images/Rectangle 5.jpg"
+                    alt="Penguins"
+                  />
+                  <div class="card-bottom">
+                    <div class="description">
+                      <h2>Alligators</h2>
+                      <p>Native to Southeastern U. S.</p>
+                    </div>
+                    <img
+                      src="./assets/icons/meet-fish_icon.png"
+                      alt="meet and fish"
+                      width="50"
+                      class="card-icon"
+                    />
+                  </div>
+                </li>
+                <li id="card7" class="card-item">
                   <img
                     class="animal-img"
                     src="./assets/images/Penguins.jpg"
@@ -234,7 +255,9 @@
               </ul>
             </div>
 
-            <div><button class="scroll-btn right">&rarr;</button></div>
+            <div class="card-arrows">
+              <button class="scroll-btn right">&rarr;</button>
+            </div>
           </div>
           <button class="choose-favorite-btn">choose your favorite</button>
         </section>
