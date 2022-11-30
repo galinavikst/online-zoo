@@ -356,14 +356,14 @@ input[type="checkbox"]:checked + .nav-list {
     top: 0;
   }
   to {
-    top: -45px;
+    top: -11%;
     background-color: #00000059;
   }
 }
 .card-bottom {
   display: flex;
   justify-content: space-between;
-  padding: 5px 15px 15px;
+  padding: 5px 15px 16px;
 }
 .description {
   display: inline-block;
@@ -874,6 +874,9 @@ footer .nav-list {
     width: 292px;
     height: 354px;
   }
+  .card-bottom {
+    padding: 5px 15px 5px;
+  }
   .scroll-btn {
     width: 62px;
   }
@@ -1058,7 +1061,7 @@ footer .nav-list {
     font-size: 13px;
   }
   .card-bottom {
-    padding: 3px 11px 1px;
+    padding: 3px 11px 10px;
   }
   .description p {
     font-size: 12px;

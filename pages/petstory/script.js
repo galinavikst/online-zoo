@@ -75,7 +75,6 @@ function getRandom(arr) {
 }
 
 function slider6() {
-  //let ranInd = getRandom(cardArr);
   for (let i = 0; i < cardArr.length; i++) {
     if (cardArr[i].classList.contains("hidden")) {
       cardArr[i].classList.remove("hidden");
