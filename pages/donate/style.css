@@ -9,7 +9,6 @@
   --bg-pink-color: rgba(253, 253, 255, 0.52);
   --orange-gradient: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   --progress-bar-bg: #404950;
-
   --hover-btn-color: #e47209;
   --activ-addition-color: #4b9200;
   --gray-ligth-bg-color: #f1f3f2;
@@ -126,6 +125,14 @@ nav {
   color: var(--accent-color);
 }
 /* --- header hamb-menu... */
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #07070776;
+}
 input[type="checkbox"] {
   display: none;
 }

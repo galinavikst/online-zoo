@@ -31,7 +31,7 @@
               </h1>
             </div>
           </a>
-          <nav>
+          <nav id="header-nav">
             <ul class="nav-list">
               <li class="nav-item">
                 <a href="../../index.html" class="nav-link">About</a>
@@ -63,6 +63,7 @@
         </label>
       </header>
       <main>
+        <div class="overlay"></div>
         <div class="hero"></div>
         <section class="donation">
           <h3 class="officially-opened">
@@ -108,7 +109,7 @@
                   <input
                     type="radio"
                     name="amount"
-                    value="usd5000"
+                    value="5000"
                     id="usd5000"
                     class="radio-input"
                   /><label for="usd5000" class="label-amount">
@@ -119,7 +120,7 @@
                   <input
                     type="radio"
                     name="amount"
-                    value="usd2000"
+                    value="2000"
                     id="usd2000"
                     class="radio-input"
                   />
@@ -131,7 +132,7 @@
                   <input
                     type="radio"
                     name="amount"
-                    value="usd1000"
+                    value="1000"
                     id="usd1000"
                     class="radio-input"
                   />
@@ -143,7 +144,7 @@
                   <input
                     type="radio"
                     name="amount"
-                    value="usd500"
+                    value="500"
                     id="usd500"
                     class="radio-input"
                   />
@@ -155,7 +156,7 @@
                   <input
                     type="radio"
                     name="amount"
-                    value="usd250"
+                    value="250"
                     id="usd250"
                     class="radio-input"
                   />
@@ -167,9 +168,10 @@
                   <input
                     type="radio"
                     name="amount"
-                    value="usd100"
+                    value="100"
                     id="usd100"
                     class="radio-input"
+                    checked
                   />
                   <label for="usd100" class="label-amount">
                     <small>$</small>100</label
@@ -179,7 +181,7 @@
                   <input
                     type="radio"
                     name="amount"
-                    value="usd50"
+                    value="50"
                     id="usd50"
                     class="radio-input"
                   />
@@ -191,7 +193,7 @@
                   <input
                     type="radio"
                     name="amount"
-                    value="usd25"
+                    value="25"
                     id="usd25"
                     class="radio-input"
                   />
@@ -207,15 +209,22 @@
                 type="number"
                 placeholder="Another amount"
                 class="input-another-amount"
-                name="monthly"
+                value="100"
+                required
               />
               <div class="form-radio-input">
                 <div class="feed-input-label">
-                  <input type="radio" name="period" class="input-period" />
-                  <label for="monthly" class="label-period">Monthly</label>
+                  <input
+                    id="month"
+                    type="radio"
+                    name="period"
+                    class="input-period"
+                  />
+                  <label for="month" class="label-period">Monthly</label>
                 </div>
                 <div class="feed-input-label">
                   <input
+                    id="once"
                     type="radio"
                     name="period"
                     class="input-period"
@@ -333,5 +342,6 @@
         </div>
       </footer>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
